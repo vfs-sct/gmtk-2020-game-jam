@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[Transition] - BarWipe'
+  m_Controller: {fileID: 9100000, guid: 61b636d85eeeb564295af92a68e0be0f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: dafcf848e273931449054626c7c46b98, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c78238e13f049d642b6f2872a2f11995, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 080301067bce04a42b3a700126a6099a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d5ccc6f77abd1cc4fa9b4c27ba858700, type: 2}
