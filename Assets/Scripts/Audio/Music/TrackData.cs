@@ -40,9 +40,9 @@ namespace Afloat
         
         
               
-#region // ## MONOBEHAVIOUR METHODS ##
+#region // ## SCRIPTABLE OBJECT METHODS ##
                 
-        private void Awake()
+        private void OnEnable()
         {
             _beatLength = 60 / _bpm; /// reciprocal to get minutes of beat, 60 to get seconds
             _beatList.Sort();
@@ -71,6 +71,7 @@ namespace Afloat
 
         private CustomYieldInstruction WaitBetweenBeats (float a, float b)
         {
+            Debug.Log($"{_beatLength} * {a} - {b} ({Mathf.Clamp01(a - b)})");
             return new WaitForSecondsRealtime(
                 _beatLength * Mathf.Clamp01(a - b)
             );

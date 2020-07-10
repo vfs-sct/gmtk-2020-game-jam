@@ -37,7 +37,10 @@ namespace Afloat
                 
         IEnumerator Start ()
         {
-            yield return _track.CallOnBeat(OnBeat);
+            while(true)
+            {
+                yield return _track.CallOnBeat(OnBeat);
+            }
         }
         
 #endregion      
@@ -65,6 +68,7 @@ namespace Afloat
         private void OnBeat ()
         {
             UnityEditor.EditorApplication.Beep();
+            Debug.Log($"a");
         }
         
 #endregion
