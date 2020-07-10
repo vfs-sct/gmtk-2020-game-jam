@@ -2,6 +2,7 @@
     Copyright (C) 2020 Team Triple Double, Diego Castagne
 */
 using UnityEngine;
+using Afloat.Util;
 
 namespace Afloat
 {
@@ -24,9 +25,22 @@ namespace Afloat
 
         private void Update()
         {
-            _moveInput = new Vector2(Input.GetAxis(_xMoveInput), Input.GetAxis(_yMoveInput));
+            Vector2 moveInput = new Vector2(Input.GetAxis(_xMoveInput), Input.GetAxis(_yMoveInput));
+            Vector2 aimInput = new Vector2(Input.GetAxis(_xAimInput), Input.GetAxis(_yAimInput));
 
-            _aimInput = new Vector2(Input.GetAxis(_xAimInput), Input.GetAxis(_yAimInput));
+            _moveInput = moveInput;
+
+            _aimInput = aimInput;
+
+            if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                _moveInput = MathFunctions.MapToCircle(moveInput.x, moveInput.y);
+            }
+
+            if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+            {
+                _aimInput = MathFunctions.MapToCircle(aimInput.x, aimInput.y);
+            }
         }
 
 #endregion
