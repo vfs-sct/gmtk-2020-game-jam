@@ -16,6 +16,7 @@ namespace Afloat
         
         // ## UNITY EDITOR ##
 
+        [SerializeField] private AudioSource _target;
         [SerializeField] private TrackData _track;
         
         
@@ -35,12 +36,9 @@ namespace Afloat
               
 #region // ## MONOBEHAVIOUR METHODS ##
                 
-        IEnumerator Start ()
+        void Start ()
         {
-            while(true)
-            {
-                yield return _track.CallOnBeat(OnBeat);
-            }
+            _track.Play(this, _target, OnBeat);
         }
         
 #endregion      

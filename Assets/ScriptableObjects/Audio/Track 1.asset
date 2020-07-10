@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b010f1bba9aa9ba4da1f29f08f0c373e, type: 3}
   m_Name: Track 1
   m_EditorClassIdentifier: 
-  _loopClip: {fileID: 0}
-  _bpm: 60
+  _loopClip: {fileID: 8300000, guid: 630ce442388cee84b8006567b321ec69, type: 3}
+  _bpm: 30
   _beatCountInBar: 4
   _beatList:
   - 0

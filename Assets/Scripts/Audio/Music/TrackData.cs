@@ -8,8 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using GameSavvy.OpenUnityAttributes;
-
-
+using Afloat.Util.Coroutines;
 
 namespace Afloat
 {
@@ -35,6 +34,7 @@ namespace Afloat
         
         // ## PRIVATE UTIL VARS ##
 
+        CoroutineHandler _playRoutine = null;
         float _beatLength = -1; /// length of a beat in seconds
         
         
@@ -51,27 +51,46 @@ namespace Afloat
 #endregion      
 
 #region // ## PUBLIC METHODS ##
-                
-        public IEnumerator CallOnBeat(System.Action action)
-        {
-            float lastBeatValue = 0;
-            foreach (var beat in _beatList)
-            {
-                yield return WaitBetweenBeats(beat, lastBeatValue);
-                action();
-            }
 
-            // wait till end of bar
-            yield return WaitBetweenBeats(_beatCountInBar, lastBeatValue);
+        public void Play (MonoBehaviour target, AudioSource source, System.Action action)
+        {
+            _playRoutine = new CoroutineHandler(target);
+            _playRoutine.Start(PlayRoutine(source, action));
+        }
+
+        public void Stop ()
+        {
+            _playRoutine.Stop();
         }
         
 #endregion  
         
 #region // ## PRIVATE METHODS ##   
 
+
+        private IEnumerator PlayRoutine(AudioSource source, System.Action action)
+        {
+            // play clip
+            source.clip = _loopClip;
+            source.Play();
+
+            // keep on triggering action on beats until stopped
+            while(true)
+            {
+                float lastBeatValue = 0;
+                foreach (var beat in _beatList)
+                {
+                    yield return WaitBetweenBeats(beat, lastBeatValue);
+                    action();
+                }
+
+                // wait till end of bar
+                yield return WaitBetweenBeats(_beatCountInBar, lastBeatValue);
+            }
+        }
+
         private CustomYieldInstruction WaitBetweenBeats (float a, float b)
         {
-            Debug.Log($"{_beatLength} * {a} - {b} ({Mathf.Clamp01(a - b)})");
             return new WaitForSecondsRealtime(
                 _beatLength * Mathf.Clamp01(a - b)
             );
