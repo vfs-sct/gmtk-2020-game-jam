@@ -9,6 +9,7 @@ namespace Afloat
     public class InputController : MonoBehaviour
     {
         // ## UNITY EDITOR ##
+        [SerializeField] private PlayerController _targetPlayer = null;
         [SerializeField] private string _xMoveInput = "";
         [SerializeField] private string _yMoveInput = "";
         [SerializeField] private string _xAimInput = "";
@@ -40,6 +41,11 @@ namespace Afloat
             if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
             {
                 _aimInput = MathFunctions.MapToCircle(aimInput.x, aimInput.y);
+            }
+
+            if(moveInput.sqrMagnitude > 0.01f)
+            {
+                _targetPlayer.Move(_moveInput);
             }
         }
 
