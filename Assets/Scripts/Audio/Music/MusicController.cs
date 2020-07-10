@@ -16,6 +16,7 @@ namespace Afloat
         
         // ## UNITY EDITOR ##
 
+        [SerializeField] private AudioClip _actionClip;
         [SerializeField] private AudioSource _target;
         [SerializeField] private TrackData _track;
         
@@ -65,8 +66,8 @@ namespace Afloat
         
         private void OnBeat ()
         {
-            UnityEditor.EditorApplication.Beep();
-            Debug.Log($"a");
+            _target.PlayOneShot(_actionClip);
+            Debug.Log($"A");
         }
         
 #endregion

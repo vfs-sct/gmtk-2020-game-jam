@@ -44,7 +44,7 @@ namespace Afloat
                 
         private void OnEnable()
         {
-            _beatLength = 60 / _bpm; /// reciprocal to get minutes of beat, 60 to get seconds
+            _beatLength = 60f / _bpm; /// reciprocal to get minutes of beat, 60 to get seconds
             _beatList.Sort();
         }
         
@@ -95,7 +95,7 @@ namespace Afloat
         private CustomYieldInstruction WaitBetweenBeats (float a, float b)
         {
             return new WaitForSecondsRealtime(
-                _beatLength * Mathf.Clamp01(a - b)
+                _beatLength * (a - b)
             );
         }
         
