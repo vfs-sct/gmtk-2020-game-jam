@@ -20,22 +20,16 @@ namespace Afloat
     public class TrackData : ScriptableObject
     {
 
-        [System.Serializable]
-        public class Beat 
-        {
-            [ReorderableList]
-            public List<float> NoteList;
-        }
-
 
 
         // ## UNITY EDITOR ##
         
-        [SerializeField] private AudioClip _loop = null;
+        [SerializeField] private AudioClip _loopClip = null;
         [SerializeField] private int _bpm = 120;
+        [SerializeField] private int _beatCountInBar = 4;
         
         [ReorderableList]
-        [SerializeField] private List<Beat> _beatList;
+        [SerializeField] private List<float> _beatList;
 
 
         
@@ -51,54 +45,54 @@ namespace Afloat
         private void Awake()
         {
             _beatLength = 60 / _bpm; /// reciprocal to get minutes of beat, 60 to get seconds
-            OrderLists();
+            _beatList.Sort();
         }
         
 #endregion      
 
 #region // ## PUBLIC METHODS ##
                 
-        public IEnumerator WaitForBeat(System.Action action)
+        public IEnumerator CallOnBeat(System.Action action)
+        {
+            float lastBeatValue = 0;
+            foreach (var beat in _beatList)
+            {
+                yield return WaitBetweenBeats(beat, lastBeatValue);
+                action();
+            }
+
+            // wait till end of bar
+            yield return WaitBetweenBeats(_beatCountInBar, lastBeatValue);
+        }
+        
+#endregion  
+        
+#region // ## PRIVATE METHODS ##   
+
+        private CustomYieldInstruction WaitBetweenBeats (float a, float b)
+        {
+            return new WaitForSecondsRealtime(
+                _beatLength * Mathf.Clamp01(a - b)
+            );
+        }
+        
+#endregion
+
+#if UNITY_EDITOR
+
+        private void OnValidate()
         {
             foreach (var beat in _beatList)
             {
-                float lastNoteValue = 0;
-                foreach (var note in beat.NoteList)
+                if(_beatCountInBar < beat)
                 {
-                    yield return new WaitForSecondsRealtime(
-                        _beatLength * Mathf.Clamp01(note - lastNoteValue)
-                    );
-                    
-                    action();
+                    Debug.LogError($"Music Track {name} has beats outside of the total bar length", this);
+                    break;
                 }
             }
         }
-        
-#endregion       
 
-#region // ## <SOME INTERFACE> METHODS ##   
-                
-        
-        
-#endregion
-        
-#region // ## PROTECTED METHODS ##   
-        
-        
-        
-#endregion
-        
-#region // ## PRIVATE METHODS ##   
-        
-        private void OrderLists ()
-        {
-            foreach (var beat in _beatList)
-            {
-                beat.NoteList.Sort();
-            }
-        }
-        
-#endregion
+#endif
 
     }
 }
