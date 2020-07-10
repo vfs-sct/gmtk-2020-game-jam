@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Track 1
   m_EditorClassIdentifier: 
   _loopClip: {fileID: 8300000, guid: 630ce442388cee84b8006567b321ec69, type: 3}
-  _bpm: 30
-  _beatCountInBar: 4
+  _bpm: 120
+  _beatCountInBar: 5
   _beatList:
   - 0
   - 1
   - 2
-  - 3
+  - 2.5
+  - 4

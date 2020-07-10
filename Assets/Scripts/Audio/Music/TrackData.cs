@@ -72,6 +72,7 @@ namespace Afloat
         {
             // play clip
             source.clip = _loopClip;
+            source.loop = true;
             source.Play();
 
             // keep on triggering action on beats until stopped
@@ -82,6 +83,8 @@ namespace Afloat
                 {
                     yield return WaitBetweenBeats(beat, lastBeatValue);
                     action();
+
+                    lastBeatValue = beat;
                 }
 
                 // wait till end of bar
