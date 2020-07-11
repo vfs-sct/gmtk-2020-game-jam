@@ -72,7 +72,11 @@ namespace Afloat
         {
             // play clip
             source.clip = _loopClip;
+            source.clip.LoadAudioData();
             source.loop = true;
+            
+            yield return new WaitUntil(() => source.clip.loadState == AudioDataLoadState.Loaded);
+            
             source.Play();
 
             // keep on triggering action on beats until stopped
