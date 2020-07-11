@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efa8aa517d38b745a034f0a1a309fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _potionType: {fileID: 11400000, guid: 551f1f45cc5acc145a5b9aa210bd65a8, type: 2}
 --- !u!1 &7315532105051117481
 GameObject:
   m_ObjectHideFlags: 0

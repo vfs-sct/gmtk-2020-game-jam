@@ -8,6 +8,7 @@ namespace Afloat
     public class ThrownPotionController : MonoBehaviour
     {
         // ## UNITY EDITOR ##
+        [SerializeField] private PotionType _potionType = null;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
