@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e7ec084a79c4934cbb523787572a189, type: 3}
   m_Name: '[PotionType] - Blue'
   m_EditorClassIdentifier: 
+  Name: Blue Potion
+  PotionPrefab: {fileID: 6458462992253363861, guid: 6dbebb9a7caf0d348a76738c78742ae5,
+    type: 3}

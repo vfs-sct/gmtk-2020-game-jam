@@ -8,6 +8,7 @@ namespace Afloat
     [CreateAssetMenu( fileName = "PotionType", menuName = "Custom/PotionType" )]
     public class PotionType : ScriptableObject
     {
-
+        public string Name;
+        public GameObject PotionPrefab;
     }
 }

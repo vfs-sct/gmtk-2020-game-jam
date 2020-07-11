@@ -10,12 +10,17 @@ namespace Afloat
         // ## UNITY EDITOR ##
         [SerializeField] private float _moveSpeed = 0f;
         [SerializeField] private float _turnSpeedSeconds = 0f;
+        [SerializeField] private PotionType _potionTypeToShoot = null;
+        [SerializeField] private float _launchSpeed = 0f;
+        [SerializeField] private Transform _potionLaunchOrigin = null;
+
 
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
         private Rigidbody _rbd;
+        private float _timeOfVerticalTravel;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -45,7 +50,12 @@ namespace Afloat
 
         public void Shoot()
         {
-            Debug.Log("I just shot a potion");
+            Debug.Log($"I just shot a {_potionTypeToShoot.Name}");
+            var potion = Instantiate(_potionTypeToShoot.PotionPrefab, _potionLaunchOrigin.position, _potionLaunchOrigin.rotation);
+            if(potion.TryGetComponent<Rigidbody>(out Rigidbody potionRBD))
+            {
+                potionRBD.velocity = transform.forward * _launchSpeed;
+            }
         }
 
 #endregion
