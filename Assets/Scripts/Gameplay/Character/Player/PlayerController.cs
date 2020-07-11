@@ -33,6 +33,16 @@ namespace Afloat
             _rbd.velocity = new Vector3(input.x * _moveSpeed, _rbd.velocity.y, input.y * _moveSpeed);
         }
 
+        public void Aim(Vector2 input)
+        {
+            Vector3 aimInput = new Vector3(input.x, 0f, input.y);
+            
+
+            Quaternion lookDir = Quaternion.LookRotation(aimInput, Vector3.up);
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookDir, _turnSpeedSeconds);
+        }
+
 #endregion
         
 #region // ## <SOME INTERFACE> METHODS ##   
