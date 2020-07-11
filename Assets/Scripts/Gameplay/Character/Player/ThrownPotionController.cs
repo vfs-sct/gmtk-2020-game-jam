@@ -18,7 +18,20 @@ namespace Afloat
 
         private void OnCollisionEnter(Collision other)
         {
-            Instantiate(_potionType.VFXPrefab, transform.position, Quaternion.identity);
+            if(other.gameObject.TryGetComponent<GoblinController>(out GoblinController goblin))
+            {
+                if(_potionType == goblin.PotionToKill)
+                {
+                    goblin.Die();
+                    // Raise a kill goblin event for score purposes
+                }
+            }
+
+            // Play potion breaking sound here
+
+            var vfx = Instantiate(_potionType.VFXPrefab, transform.position, Quaternion.identity);
+            
+            Destroy(vfx, 5f);
             Destroy(gameObject);
         }
 
