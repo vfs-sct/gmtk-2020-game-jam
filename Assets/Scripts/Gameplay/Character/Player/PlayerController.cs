@@ -10,6 +10,8 @@ namespace Afloat
         // ## UNITY EDITOR ##
         [SerializeField] private float _moveSpeed = 0f;
         [SerializeField] private float _turnSpeedSeconds = 0f;
+        [SerializeField] private PotionLauncherController _potionLauncher = null;
+
 
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
@@ -41,6 +43,11 @@ namespace Afloat
             Quaternion lookDir = Quaternion.LookRotation(aimInput, Vector3.up);
 
             transform.rotation = Quaternion.Slerp(transform.rotation, lookDir, _turnSpeedSeconds);
+        }
+
+        public void Shoot()
+        {
+            _potionLauncher.ShootNextPotion();
         }
 
 #endregion
