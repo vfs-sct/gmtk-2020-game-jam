@@ -19,8 +19,8 @@ namespace Afloat
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
-        public Vector2 _moveInput;
-        public Vector2 _aimInput;
+        private Vector2 _moveInput;
+        private Vector2 _aimInput;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -42,10 +42,17 @@ namespace Afloat
             {
                 _aimInput = MathFunctions.MapToCircle(aimInput.x, aimInput.y);
             }
-
+            
+            // Moves the player
             if(moveInput.sqrMagnitude > 0.01f)
             {
                 _targetPlayer.Move(_moveInput);
+            }
+
+            // Moves player's aim
+            if(aimInput.sqrMagnitude != 0)
+            {
+                _targetPlayer.Aim(_aimInput);
             }
         }
 
