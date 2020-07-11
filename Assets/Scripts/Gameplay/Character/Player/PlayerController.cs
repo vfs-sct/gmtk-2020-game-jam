@@ -43,6 +43,11 @@ namespace Afloat
             transform.rotation = Quaternion.Slerp(transform.rotation, lookDir, _turnSpeedSeconds);
         }
 
+        public void Shoot()
+        {
+            Debug.Log("I just shot a potion");
+        }
+
 #endregion
         
 #region // ## <SOME INTERFACE> METHODS ##   
