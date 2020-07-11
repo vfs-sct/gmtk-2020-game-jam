@@ -49,6 +49,7 @@ namespace Afloat
             _camera.Priority = 15;
             yield return new WaitForSeconds(_duration);
             _camera.Priority = 0;
+            gameObject.SetActive(false);
         }
 
 #endregion
