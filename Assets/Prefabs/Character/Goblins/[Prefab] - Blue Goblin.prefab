@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 8733364962878993597}
   - component: {fileID: 1709440312447474119}
   m_Layer: 0
-  m_Name: '[Model] - Goblin'
+  m_Name: '[Prefab] - Blue Goblin'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,7 +549,7 @@ Animator:
   m_GameObject: {fileID: 5721960703211357870}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 1b18e485359af1f4eb4830746f658778, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61efe74b774f674479eb51da5f2a9d76, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
