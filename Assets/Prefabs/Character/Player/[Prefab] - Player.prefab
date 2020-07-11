@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5679494696041816473}
   - component: {fileID: 3204332893857906769}
   - component: {fileID: 8973784454461560235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6495254354655516791}
   - component: {fileID: 6495254354655516790}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Virtual Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 6495254354685198587}
   - component: {fileID: 6495254354685198588}
   - component: {fileID: 6495254354685198586}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 6495254354889167019}
   - component: {fileID: 6495254354889167016}
   - component: {fileID: 3007784052553569969}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player Logic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ MonoBehaviour:
   _moveSpeed: 5
   _turnSpeedSeconds: 0.5
   _potionTypeToShoot: {fileID: 11400000, guid: 551f1f45cc5acc145a5b9aa210bd65a8, type: 2}
-  _launchSpeed: 5
+  _launchSpeed: 8
   _potionLaunchOrigin: {fileID: 4118392696219694129}
 --- !u!114 &3007784052553569969
 MonoBehaviour:
@@ -390,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6495254355265416795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 6495254355282734634}
   - component: {fileID: 6495254355282734639}
   - component: {fileID: 6495254355282734636}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6495254356030988980}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6495254356277990282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '[Prefab] - Player'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4118392696219694129}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Potion Launcher
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
