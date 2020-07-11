@@ -15,3 +15,5 @@ MonoBehaviour:
   Name: Blue Potion
   PotionPrefab: {fileID: 6458462992253363861, guid: 6dbebb9a7caf0d348a76738c78742ae5,
     type: 3}
+  VFXPrefab: {fileID: 5032629248404539278, guid: 5821ba81a7c831f478a6035911978186,
+    type: 3}

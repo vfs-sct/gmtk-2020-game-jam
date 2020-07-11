@@ -15,3 +15,5 @@ MonoBehaviour:
   Name: Red Potion
   PotionPrefab: {fileID: 7315532104657468086, guid: 7ad7fce7a49faf048ab70cffb0646589,
     type: 3}
+  VFXPrefab: {fileID: 5190082329919518789, guid: 2d867dc39f2a14c46ba038c4887e22fe,
+    type: 3}

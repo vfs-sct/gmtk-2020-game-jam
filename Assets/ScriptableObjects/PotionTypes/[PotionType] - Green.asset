@@ -15,3 +15,5 @@ MonoBehaviour:
   Name: Green Potion
   PotionPrefab: {fileID: 1711079786128845377, guid: 12d16a4e9c5ba5b43808933e4868c817,
     type: 3}
+  VFXPrefab: {fileID: 9043688056930761279, guid: 6a0d4313df57f5441925d2b083e0d3f5,
+    type: 3}

@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5498711852307651703, guid: 7ad7fce7a49faf048ab70cffb0646589,
+        type: 3}
+      propertyPath: _potionType
+      value: 
+      objectReference: {fileID: 11400000, guid: 044919aa7302b954d8b341781abf8193,
+        type: 2}
     - target: {fileID: 7315532104657468083, guid: 7ad7fce7a49faf048ab70cffb0646589,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 7315532104657468086, guid: 7ad7fce7a49faf048ab70cffb0646589,
         type: 3}
       propertyPath: m_Name
-      value: '[Prefab] - Potion'
+      value: '[Prefab] - Green Potion'
       objectReference: {fileID: 0}
     - target: {fileID: 7315532106306119249, guid: 7ad7fce7a49faf048ab70cffb0646589,
         type: 3}

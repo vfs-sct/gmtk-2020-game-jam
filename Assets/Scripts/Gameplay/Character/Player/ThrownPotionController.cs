@@ -18,6 +18,7 @@ namespace Afloat
 
         private void OnCollisionEnter(Collision other)
         {
+            Instantiate(_potionType.VFXPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
