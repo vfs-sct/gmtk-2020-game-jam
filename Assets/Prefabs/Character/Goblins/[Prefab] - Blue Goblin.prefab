@@ -519,6 +519,7 @@ GameObject:
   - component: {fileID: 3305422362779097188}
   - component: {fileID: 7619110868501952827}
   - component: {fileID: -6206881831899801818}
+  - component: {fileID: 4604930890946036699}
   m_Layer: 0
   m_Name: '[Prefab] - Blue Goblin'
   m_TagString: Untagged
@@ -587,7 +588,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -605,6 +606,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _potionToKill: {fileID: 11400000, guid: fb4f71eb504a9bf4a9006500689c3853, type: 2}
   _timeToDie: 0.5
+  _agent: {fileID: 4604930890946036699}
+  _sightRange: 5
+  _playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!195 &4604930890946036699
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5721960703211357870}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5826571778695706419
 GameObject:
   m_ObjectHideFlags: 0
