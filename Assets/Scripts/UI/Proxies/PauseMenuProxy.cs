@@ -80,13 +80,13 @@ namespace Afloat.UI.Proxies
         private void OnShowMenuGroup ()
         {
             _onPauseEvent.Raise();
-            Time.timeScale = 0;
+            Time.timeScale = 0.01f;
         }
 
         private void OnHideMenuGroup ()
         {
             _onUnpauseEvent.Raise();
-            Time.timeScale = 1;
+            Time.timeScale = 1f;
         }
 
         private IEnumerator LoadMainMenu ()

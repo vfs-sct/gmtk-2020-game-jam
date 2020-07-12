@@ -13,6 +13,7 @@ using UnityEngine.Events;
 using Afloat.Util.Coroutines;
 using Afloat.Util;
 using DG.Tweening;
+using UnityEngine.Audio;
 
 namespace Afloat.UI.MenuSystem
 {
@@ -26,6 +27,7 @@ namespace Afloat.UI.MenuSystem
 
         // ## UNITY EDITOR ##
 
+        [SerializeField] private AudioMixer _targetAudio;
         [SerializeField] private MenuGroupData _data = null;
         [SerializeField] private MenuUI _startMenu = null;
         [SerializeField] private GraphicRaycaster _canvasInput = null;
@@ -104,6 +106,12 @@ namespace Afloat.UI.MenuSystem
 
             OpenMenu(_startMenu);
             OnShow.Invoke();
+
+            _targetAudio.TransitionToSnapshots(
+                new AudioMixerSnapshot[]{_targetAudio.FindSnapshot("Menu")},
+                new float[]{1},
+                _data.FadeTime/2
+            );
         }
 
         public void Hide ()
@@ -112,6 +120,12 @@ namespace Afloat.UI.MenuSystem
 
             ClearStack();
             OnHide.Invoke();
+
+            _targetAudio.TransitionToSnapshots(
+                new AudioMixerSnapshot[]{_targetAudio.FindSnapshot("Default")},
+                new float[]{1},
+                _data.FadeTime/2
+            );
         }
 
         public void Toggle ()
@@ -145,6 +159,7 @@ namespace Afloat.UI.MenuSystem
         {
             yield return _parentCanvasGroup
                 .DOFade(amount, _data.FadeTime)
+                .SetUpdate(true)
                 .WaitForCompletion();
         }
 

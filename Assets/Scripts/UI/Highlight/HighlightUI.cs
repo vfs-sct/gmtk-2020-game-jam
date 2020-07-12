@@ -72,21 +72,25 @@ namespace Afloat
         {
             if(_sound != null ) _sound.PlayImmediately();
             
-            CanvasGroup.DOFade(1, fadeTime / 3f);
+            CanvasGroup.DOFade(1, fadeTime / 3f)
+                .SetUpdate(true);
             
             for (int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).DOScaleX(1, fadeTime);
+                transform.GetChild(i).DOScaleX(1, fadeTime)
+                .SetUpdate(true);
             }
         }
 
         public virtual void Hide(float fadeTime)
         {
-            CanvasGroup.DOFade(0, fadeTime / 3f);
+            CanvasGroup.DOFade(0, fadeTime / 3f)
+                .SetUpdate(true);
 
             for (int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).DOScaleX(0, fadeTime);
+                transform.GetChild(i).DOScaleX(0, fadeTime)
+                .SetUpdate(true);
             }
         }
         
