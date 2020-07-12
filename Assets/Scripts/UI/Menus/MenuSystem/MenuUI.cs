@@ -76,11 +76,13 @@ namespace Afloat.UI.MenuSystem
             // fades the y axis in parallel
             _targetCanvasGroup.transform
                 .DOMoveY(transform.position.y + _menuData.FadeOffsetY, _menuData.FadeTime)
+                .SetUpdate(true)
                 .From();
 
             // fades in graphic
             yield return _targetCanvasGroup
                 .DOFade(1f, _menuData.FadeTime)
+                .SetUpdate(true)
                 .WaitForCompletion();
         }
 
@@ -91,11 +93,13 @@ namespace Afloat.UI.MenuSystem
 
             // fades the y axis in parallel
             _targetCanvasGroup.transform
-                .DOMoveY(transform.position.y + _menuData.FadeOffsetY, _menuData.FadeTime);
+                .DOMoveY(transform.position.y + _menuData.FadeOffsetY, _menuData.FadeTime)
+                .SetUpdate(true);
             
             // fades out graphic
             yield return _targetCanvasGroup
                 .DOFade(0f, _menuData.FadeTime)
+                .SetUpdate(true)
                 .WaitForCompletion();
 
             _targetCanvasGroup.transform.position -= Vector3.up * _menuData.FadeOffsetY; /// resets the position

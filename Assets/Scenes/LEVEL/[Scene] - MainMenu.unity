@@ -371,6 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbec55a1b2bcf244fb3ac806b2c1eee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _targetAudio: {fileID: 24100000, guid: ad15f783bf8c09a459e9a2b66337c5d0, type: 2}
   _data: {fileID: 11400000, guid: 7d381425cfe014e4894412ff1f964ad9, type: 2}
   _startMenu: {fileID: 4579098888585950923}
   _canvasInput: {fileID: 2533424211544639750}
@@ -3537,6 +3538,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[Image] - Background Fullscreen'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937953726725491987, guid: 8610e6b3be7e0444faf0e78330407b2e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.06649308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937953726725491987, guid: 8610e6b3be7e0444faf0e78330407b2e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.20754719
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937953726725491987, guid: 8610e6b3be7e0444faf0e78330407b2e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.047970816
       objectReference: {fileID: 0}
     - target: {fileID: 6929409240381156331, guid: 8610e6b3be7e0444faf0e78330407b2e,
         type: 3}
