@@ -21,10 +21,13 @@ namespace Afloat
         
         // ## UNITY EDITOR ##
 
-        [SerializeField] private AudioClip _actionClip;
-        [SerializeField] private GameEvent _shootEvent;
+        [Header("References")]
         [SerializeField] private AudioSource _target;
         [SerializeField] private TrackData _track;
+
+        [Header("On Beat")]
+        [SerializeField] private AudioClip _actionClip;
+        [SerializeField] private GameEvent _shootEvent;
         
         
         // ## PROPERTIES  ##

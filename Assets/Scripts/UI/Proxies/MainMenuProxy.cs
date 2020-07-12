@@ -10,6 +10,8 @@ using UnityEngine;
 
 using Afloat.Util.Coroutines;
 using Afloat.UI.MenuSystem;
+using Afloat.Util.SceneManagement;
+using UnityEngine.SceneManagement;
 
 namespace Afloat.UI.Proxies
 {
@@ -22,13 +24,19 @@ namespace Afloat.UI.Proxies
         // ## UNITY EDITOR ##
 
         [SerializeField] private MenuGroupController _menuGroupController = null;
-        [SerializeField] private TextMeshProUGUI _timeInQueue = null;
 
 
         // ## PRIVATE UTIL VARS ##
+
+        CoroutineHandler _actionRoutine = null;
         
 
 #region // ## MONOBEHAVIOUR METHODS ##
+
+        private void Start()
+        {
+            _actionRoutine = new CoroutineHandler(this);
+        }
 
 #endregion
         
@@ -37,7 +45,9 @@ namespace Afloat.UI.Proxies
 
         public void LoadSingleplayer ()
         {
+            if(_actionRoutine.IsRunning) return;
 
+            _actionRoutine.Start(LoadSingleplayerRoutine());
         }
 
         public void Quit ()
@@ -50,6 +60,11 @@ namespace Afloat.UI.Proxies
 
 #region // ## PRIVATE UTIL METHODS ##
 
+        private IEnumerator LoadSingleplayerRoutine()
+        {
+            yield return TransitionController.TryTransitionOut();
+            yield return new LoadSceneJob(1, LoadSceneMode.Single).LoadAndActivate();
+        }
 
 #endregion
 

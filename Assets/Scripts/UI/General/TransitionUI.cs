@@ -55,8 +55,7 @@ namespace Afloat.UI
             
             // wait for length of anim
             yield return new WaitForSeconds(
-                _transitionAnimator.GetCurrentAnimatorStateInfo(0).length +
-                _transitionAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime
+                _transitionAnimator.GetCurrentAnimatorStateInfo(0).length
             );
         }
 

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a164a516da4cd408fa3375c9792772, type: 3}
+  m_Name: '[Float] - Volume Music'
+  m_EditorClassIdentifier: 
+  _value: 100
+  _playerPrefName: Music Volume
+  _targetMixerGroup: {fileID: 24100000, guid: ad15f783bf8c09a459e9a2b66337c5d0, type: 2}
+  _exposedPropertyName: Volume Music
