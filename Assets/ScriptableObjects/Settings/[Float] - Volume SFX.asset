@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d46060698d7ee4d8e77cf8c5f9ceed, type: 3}
+  m_Script: {fileID: 11500000, guid: f4a164a516da4cd408fa3375c9792772, type: 3}
   m_Name: '[Float] - Volume SFX'
   m_EditorClassIdentifier: 
   _value: 100
   _playerPrefName: SFX Volume
+  _targetMixerGroup: {fileID: 24100000, guid: ad15f783bf8c09a459e9a2b66337c5d0, type: 2}
+  _exposedPropertyName: Volume SFX

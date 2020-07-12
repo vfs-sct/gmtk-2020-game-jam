@@ -61,10 +61,10 @@ namespace Afloat
         {
             if(Mathf.Approximately(0, linear) || linear < 0)
             {
-                return -144.0f;
+                return -80.0f;
             }
 
-            return 20.0f * Mathf.Log10(linear);
+            return Mathf.Clamp(20.0f * Mathf.Log10(linear/100), -80f, 0f);
         }
         
 #endregion
