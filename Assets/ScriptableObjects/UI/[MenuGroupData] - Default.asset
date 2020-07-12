@@ -15,4 +15,4 @@ MonoBehaviour:
   ShowOnStart: 1
   UnlockCursorOnShow: 1
   FadeTime: 0.1
-  DelayBetweenMenus: 0.2
+  DelayBetweenMenus: 0.1

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d309d4041b229b447bdbc0e12c4e8387, type: 3}
   m_Name: '[MenuData] - Default'
   m_EditorClassIdentifier: 
-  FadeTime: 0.5
+  FadeTime: 0.2
   FadeOffsetY: -3
