@@ -131,7 +131,7 @@ namespace Afloat
             TempoMap tempoMap = TempoMap.Create(Tempo.FromBeatsPerMinute(_bpm));
 
             _midiEventList = file.GetTimedEvents()
-                // .Where(e => e.Event is NoteOnEvent)
+                .Where(e => e.Event is NoteOnEvent)
                 .Select(e => e.TimeAs<MetricTimeSpan>(tempoMap))
                 .ToArray();
 
