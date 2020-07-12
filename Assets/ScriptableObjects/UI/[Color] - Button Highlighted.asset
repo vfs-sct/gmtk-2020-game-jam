@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e2033eb9bc827428c9f16e95488b97, type: 3}
   m_Name: '[Color] - Button Highlighted'
   m_EditorClassIdentifier: 
-  _value: {r: 1, g: 1, b: 1, a: 1}
+  _value: {r: 0.9120888, g: 0.9433962, b: 0.7075472, a: 1}

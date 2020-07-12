@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e2033eb9bc827428c9f16e95488b97, type: 3}
   m_Name: '[Color] - Button Default'
   m_EditorClassIdentifier: 
-  _value: {r: 0.6509434, g: 0.3469651, b: 0.3469651, a: 0.5803922}
+  _value: {r: 0.7725491, g: 0.8313726, b: 0.40784317, a: 0.5803922}

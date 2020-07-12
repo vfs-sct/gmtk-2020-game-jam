@@ -16,11 +16,14 @@ namespace Afloat
     */
     public class MusicController : MonoBehaviour
     {
+
+        public static MusicController _instance = null;
+        public static int _lastTrackIndex = 0;
         
         // ## UNITY EDITOR ##
 
         [Header("References")]
-        [SerializeField] private TrackData _startingTrack = null;
+        [SerializeField] private TrackData[] _trackList = null;
 
         [Header("Lines")]
         [SerializeField] private AudioSource _line1 = null;
@@ -68,12 +71,11 @@ namespace Afloat
                 
         void Start ()
         {
+            _instance = this;
             _playRoutine = new CoroutineHandler(this);
 
-            if(_startingTrack != null)
-            {
-                PlayTrack(_startingTrack);
-            }
+            PlayTrack(_trackList[_lastTrackIndex]);
+            _lastTrackIndex = (_lastTrackIndex + 1) & _trackList.Length;
         }
         
 #endregion      
@@ -88,6 +90,11 @@ namespace Afloat
         public void Stop ()
         {
             _playRoutine.Start(StopRoutine());
+        }
+
+        public static void GlobalStop()
+        {
+            _instance.Stop();
         }
 
 #endregion       
@@ -137,7 +144,7 @@ namespace Afloat
         
         private void OnBeat ()
         {
-            AudioSource.PlayClipAtPoint(_actionClip, Camera.main.transform.position);
+            if(_actionClip != null) AudioSource.PlayClipAtPoint(_actionClip, Camera.main.transform.position);
             _shootEvent.Raise();
         }
         

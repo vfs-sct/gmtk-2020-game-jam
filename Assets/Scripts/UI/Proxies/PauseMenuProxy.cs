@@ -91,12 +91,14 @@ namespace Afloat.UI.Proxies
 
         private IEnumerator LoadMainMenu ()
         {
+            MusicController.GlobalStop();
             yield return TransitionController.TryTransitionOut();
             yield return new LoadSceneJob(0, LoadSceneMode.Single).LoadAndActivate();
         }
 
         private IEnumerator LoadGame ()
         {
+            MusicController.GlobalStop();
             yield return TransitionController.TryTransitionOut();
             yield return new LoadSceneJob(1, LoadSceneMode.Single).LoadAndActivate();
         }
