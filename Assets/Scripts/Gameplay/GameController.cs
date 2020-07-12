@@ -1,7 +1,9 @@
 ﻿/*
     Copyright (C) 2020 Team Triple Double, Diego Castagne
 */
+using System.Collections;
 using Afloat.Events;
+using Afloat.Util.SceneManagement;
 using UnityEngine;
 
 namespace Afloat
@@ -79,7 +81,8 @@ namespace Afloat
         {
             _playing = false;
             Debug.Log("GAME OVER");
-            Time.timeScale = 0f;
+
+            StartCoroutine(GameOverCoroutine());
         }
 
         public void RedGoblinDied()
@@ -129,6 +132,12 @@ namespace Afloat
 #endregion
         
 #region // ## PRIVATE METHODS ##   
+
+
+        private IEnumerator GameOverCoroutine()
+        {
+            yield return TransitionController.TryTransitionOut();
+        }
 
 
 
