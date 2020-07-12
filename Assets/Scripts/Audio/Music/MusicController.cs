@@ -4,6 +4,10 @@
 */
 
 using System.Collections;
+using System.IO;
+using System.Linq;
+using Melanchall.DryWetMidi.Core;
+using Melanchall.DryWetMidi.Interaction;
 using UnityEngine;
 
 namespace Afloat
@@ -67,7 +71,6 @@ namespace Afloat
         private void OnBeat ()
         {
             _target.PlayOneShot(_actionClip);
-            Debug.Log($"A");
         }
         
 #endregion
