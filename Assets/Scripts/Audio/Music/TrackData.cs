@@ -35,7 +35,8 @@ namespace Afloat
 
         // ## PROPERTIES ##
 
-        public MetricTimeSpan SongTime => new MetricTimeSpan((long)(Time.realtimeSinceStartup * 10000) * 100); /// 5 digits precision (10000), rest of 0s are for microseconds
+        public MetricTimeSpan ClipLength => MetricTimeSpanFromSeconds(_loopClip.length);
+        public MetricTimeSpan TargetTime => MetricTimeSpanFromSeconds(Time.realtimeSinceStartup);
         public string MidiFilePath => Path.Combine(
             Application.streamingAssetsPath,
             _midiFileName + ".mid"
@@ -47,6 +48,7 @@ namespace Afloat
         CoroutineHandler _midiRoutine = null;
         CoroutineHandler _playRoutine = null;
         MetricTimeSpan[] _midiEventList = null;
+        MetricTimeSpan[] _trackLength = null;
 
 #region // ## PUBLIC METHODS ##
 
@@ -88,8 +90,8 @@ namespace Afloat
 
         private IEnumerator ActionOnMidi (System.Action action)
         {
-            MetricTimeSpan startTime = SongTime;
-            MetricTimeSpan timeOfNextBeat = SongTime;
+            MetricTimeSpan startTime = TargetTime;
+            MetricTimeSpan timeOfNextBeat = TargetTime;
 
             int currentBeatIndex = 0;
 
@@ -98,7 +100,7 @@ namespace Afloat
             {
 
                 // waits while we still have time to wait
-                if(SongTime <= timeOfNextBeat)
+                if(TargetTime <= timeOfNextBeat)
                 { 
                     yield return null;
                     continue;
@@ -113,7 +115,7 @@ namespace Afloat
                 if(_midiEventList.Length <= currentBeatIndex)
                 {
                     currentBeatIndex = 0;
-                    startTime = timeOfNextBeat; /// resets time
+                    startTime += ClipLength; /// resets time
                 }
 
                 timeOfNextBeat = startTime + _midiEventList[currentBeatIndex]; /// sets next target time
@@ -123,6 +125,12 @@ namespace Afloat
             }
         }
 
+
+        
+        private MetricTimeSpan MetricTimeSpanFromSeconds (float seconds)
+        {
+            return new MetricTimeSpan((long)(seconds * 10000) * 100); /// 5 digits precision (10000), rest of 0s are for microseconds
+        }
 
 
         private void DetermineMidiEventList ()
@@ -134,11 +142,6 @@ namespace Afloat
                 .Where(e => e.Event is NoteOnEvent)
                 .Select(e => e.TimeAs<MetricTimeSpan>(tempoMap))
                 .ToArray();
-
-            foreach (var item in _midiEventList)
-            {
-                Debug.Log(item);
-            }
         }
         
 #endregion
