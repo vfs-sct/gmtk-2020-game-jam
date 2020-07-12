@@ -29,12 +29,13 @@ namespace Afloat
         
         [SerializeField] private AudioClip _loopClip = null;
         [SerializeField] private string _midiFileName = "[Midi] - Track 1";
+        [SerializeField] private int _bpm = 120;
 
 
 
         // ## PROPERTIES ##
 
-        public long SongTime => (long)Time.unscaledTime * 1000000;
+        public MetricTimeSpan SongTime => new MetricTimeSpan((long)(Time.realtimeSinceStartup * 10000) * 100); /// 5 digits precision (10000), rest of 0s are for microseconds
         public string MidiFilePath => Path.Combine(
             Application.streamingAssetsPath,
             _midiFileName + ".mid"
@@ -87,31 +88,38 @@ namespace Afloat
 
         private IEnumerator ActionOnMidi (System.Action action)
         {
-            long timeOfLastBeat = SongTime;
-            long timeOfNextBeat = SongTime;
+            MetricTimeSpan startTime = SongTime;
+            MetricTimeSpan timeOfNextBeat = SongTime;
 
             int currentBeatIndex = 0;
 
             // keep on triggering action on beats until stopped
             while(true)
             {
-                Debug.Log($"{SongTime} < {timeOfNextBeat}");
+
                 // waits while we still have time to wait
                 if(SongTime <= timeOfNextBeat)
                 { 
+                    yield return null;
                     continue;
                 }
 
-                // Debug.Log($"{currentBeatIndex} --> ({(currentBeatIndex + 1) % _midiEventList.Length}) [{_midiEventList.Length}]");
+                Debug.Log($"[] {currentBeatIndex} --> ({(currentBeatIndex + 1) % _midiEventList.Length}) [{_midiEventList.Length}]");
 
                 // updates time target
-                timeOfLastBeat = timeOfNextBeat;
-                timeOfNextBeat = timeOfLastBeat + _midiEventList[currentBeatIndex].TotalMicroseconds;
-                currentBeatIndex = (currentBeatIndex + 1) % _midiEventList.Length; /// keeps cycling through midi file
+
+                /// on loop end
+                currentBeatIndex++;
+                if(_midiEventList.Length <= currentBeatIndex)
+                {
+                    currentBeatIndex = 0;
+                    startTime = timeOfNextBeat; /// resets time
+                }
+
+                timeOfNextBeat = startTime + _midiEventList[currentBeatIndex]; /// sets next target time
 
                 // does action
                 action();
-                yield return null;
             }
         }
 
@@ -120,13 +128,17 @@ namespace Afloat
         private void DetermineMidiEventList ()
         {
             MidiFile file = MidiFile.Read(MidiFilePath);
-            TempoMap tempoMap = file.GetTempoMap();
-
-            Debug.Log($"{tempoMap.Tempo}");
+            TempoMap tempoMap = TempoMap.Create(Tempo.FromBeatsPerMinute(_bpm));
 
             _midiEventList = file.GetTimedEvents()
+                // .Where(e => e.Event is NoteOnEvent)
                 .Select(e => e.TimeAs<MetricTimeSpan>(tempoMap))
                 .ToArray();
+
+            foreach (var item in _midiEventList)
+            {
+                Debug.Log(item);
+            }
         }
         
 #endregion

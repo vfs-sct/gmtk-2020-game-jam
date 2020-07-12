@@ -70,7 +70,7 @@ namespace Afloat
         
         private void OnBeat ()
         {
-            _target.PlayOneShot(_actionClip);
+            AudioSource.PlayClipAtPoint(_actionClip, Camera.main.transform.position);
         }
         
 #endregion
