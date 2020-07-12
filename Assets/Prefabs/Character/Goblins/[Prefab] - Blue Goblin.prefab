@@ -607,7 +607,7 @@ MonoBehaviour:
   _potionToKill: {fileID: 11400000, guid: fb4f71eb504a9bf4a9006500689c3853, type: 2}
   _timeToDie: 0.5
   _agent: {fileID: 4604930890946036699}
-  _sightRange: 5
+  _sightRange: 50
   _playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024

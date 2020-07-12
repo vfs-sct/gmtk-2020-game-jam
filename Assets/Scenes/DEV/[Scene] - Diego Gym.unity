@@ -3399,6 +3399,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 411048353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &411293965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411293966}
+  m_Layer: 0
+  m_Name: SpawnPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411293966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411293965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.03, y: -11.42, z: 9.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1718276048}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &422002692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12743,6 +12773,14 @@ MonoBehaviour:
   _data: {fileID: 11400000, guid: 98b1a407df5dbd349afb19f005f48aec, type: 2}
   _startingLives: 1
   _gameOverEvent: {fileID: 11400000, guid: e45a3a489fa583542a521ccb7528bb52, type: 2}
+  _goblinsSpawnPoints:
+  - {fileID: 1722413991}
+  - {fileID: 411293966}
+  _goblinsPrefabs:
+  - {fileID: 5721960703211357870, guid: 4a81e54b8fcbcb441b384423f3b6e812, type: 3}
+  - {fileID: 7777230567450707523, guid: 7942c0ba30aead84f80986a6ab151b7e, type: 3}
+  - {fileID: 6023093652477735558, guid: 65e4f5a1ff9e79646b20e4452c6cb7ca, type: 3}
+  _intervalBetweenSpawns: 5
 --- !u!4 &1718276048
 Transform:
   m_ObjectHideFlags: 0
@@ -12753,7 +12791,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.0164984, y: 18.995499, z: -3.8315191}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1722413991}
+  - {fileID: 411293966}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12892,6 +12932,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1722413990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722413991}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722413991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722413990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.74, y: -11.42, z: 18.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1718276048}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1744516027
 GameObject:
   m_ObjectHideFlags: 1
