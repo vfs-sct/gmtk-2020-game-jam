@@ -6,6 +6,7 @@
 using System.Collections;
 using System.IO;
 using System.Linq;
+using Afloat.Events;
 using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
 using UnityEngine;
@@ -21,6 +22,7 @@ namespace Afloat
         // ## UNITY EDITOR ##
 
         [SerializeField] private AudioClip _actionClip;
+        [SerializeField] private GameEvent _shootEvent;
         [SerializeField] private AudioSource _target;
         [SerializeField] private TrackData _track;
         
@@ -71,6 +73,7 @@ namespace Afloat
         private void OnBeat ()
         {
             AudioSource.PlayClipAtPoint(_actionClip, Camera.main.transform.position);
+            _shootEvent.Raise();
         }
         
 #endregion
