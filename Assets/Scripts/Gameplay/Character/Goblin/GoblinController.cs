@@ -19,6 +19,8 @@ namespace Afloat
         [SerializeField] private GameEvent _deathEvent = null;
         [SerializeField] private GameEvent _registerEvent = null;
         [SerializeField] private float _timeToKillPlayer = 0.5f;
+        [SerializeField] private float _durationSlowedDown = 3f;
+        [SerializeField] private float _durationStopped = 0.5f;
         [Header("Audio")] 
         [SerializeField] private AudioSourceController _dyingSFX;
         // ## PROPERTIES  ##
@@ -110,6 +112,14 @@ namespace Afloat
             StartCoroutine(DyingRoutine());
         }
 
+        public void SlowDown(float factor)
+        {
+            StartCoroutine(SlowedDownRoutine(_durationSlowedDown, _agent.speed));
+
+            _agent.speed *= factor;
+            _agent.isStopped = true;
+        }
+
 #endregion
         
 #region // ## <SOME INTERFACE> METHODS ##   
@@ -125,6 +135,16 @@ namespace Afloat
             yield return new WaitForSeconds(_timeToDie);
             _deathEvent.Raise();
             Destroy(gameObject);
+        }
+
+        private IEnumerator SlowedDownRoutine(float duration, float originalSpeed)
+        {
+            yield return new WaitForSeconds(_durationStopped);
+            _agent.isStopped = false;
+
+            yield return new WaitForSeconds(duration);
+            
+            _agent.speed = originalSpeed;
         }
 
 

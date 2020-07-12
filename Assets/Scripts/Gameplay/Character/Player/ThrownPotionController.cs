@@ -15,6 +15,7 @@ namespace Afloat
         [Header("Audio")]
         [SerializeField] private AudioSourceController _explosionSFX;
         [SerializeField] private GameEvent _potionExplosion = null;
+        [SerializeField] private float _factorToSlowDownGoblins = 0.8f;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
@@ -35,6 +36,10 @@ namespace Afloat
                     if(_potionType == goblin.PotionToKill)
                     {
                         goblin.Die();
+                    }
+                    else
+                    {
+                        goblin.SlowDown(_factorToSlowDownGoblins);
                     }
                 }
             }
