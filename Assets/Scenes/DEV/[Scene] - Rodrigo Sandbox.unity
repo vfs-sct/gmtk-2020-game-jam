@@ -703,7 +703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!73398921 &767861306
 VFXRenderer:
   m_ObjectHideFlags: 2
@@ -711,7 +711,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767861305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1000,7 +1000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!73398921 &1233930332
 VFXRenderer:
   m_ObjectHideFlags: 2
@@ -1008,7 +1008,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233930331}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1277,7 +1277,7 @@ Transform:
   m_LocalScale: {x: 1.2141, y: 1.2141, z: 2.0184412}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1809393125
 GameObject:
@@ -1966,7 +1966,7 @@ PrefabInstance:
     - target: {fileID: 1198728861714876445, guid: 5ae34fe3b9c92c447b94077b7311864f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1198728861714876445, guid: 5ae34fe3b9c92c447b94077b7311864f,
         type: 3}
@@ -1988,10 +1988,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Dry Ice Smoke Jet VFX'
       objectReference: {fileID: 0}
+    - target: {fileID: 1198728861714876446, guid: 5ae34fe3b9c92c447b94077b7311864f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1198728861714876447, guid: 5ae34fe3b9c92c447b94077b7311864f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198728861714876447, guid: 5ae34fe3b9c92c447b94077b7311864f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ae34fe3b9c92c447b94077b7311864f, type: 3}
@@ -2205,10 +2215,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Dry Ice Smoke Respawn VFX'
       objectReference: {fileID: 0}
+    - target: {fileID: 7086906072448488854, guid: 3b79aa9b2e53ca9429b657f7beb324a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7086906072448488855, guid: 3b79aa9b2e53ca9429b657f7beb324a2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086906072448488855, guid: 3b79aa9b2e53ca9429b657f7beb324a2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b79aa9b2e53ca9429b657f7beb324a2, type: 3}
