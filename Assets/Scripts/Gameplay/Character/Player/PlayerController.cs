@@ -22,6 +22,7 @@ namespace Afloat
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
         private Rigidbody _rbd;
+        private bool _gameOver = false;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -59,6 +60,8 @@ namespace Afloat
 
         public void Shoot()
         {
+            if(_gameOver) return;
+
             _potionLauncher.ShootNextPotion();
         }
 
@@ -73,6 +76,12 @@ namespace Afloat
             _deathEvent.Raise();
 
             // Maybe respawn?
+        }
+
+        public void GameOver()
+        {
+            _gameOver = true;
+            Destroy(gameObject);
         }
 
 #endregion

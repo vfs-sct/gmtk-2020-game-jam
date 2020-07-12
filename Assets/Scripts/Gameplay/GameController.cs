@@ -37,6 +37,8 @@ namespace Afloat
             _data.TimeSurvived = 0f;
             _data.LivesLeft = _startingLives;
 
+            _data.GameOver = false;
+
             _spawnTimer = 0f;
         }
 
@@ -82,7 +84,7 @@ namespace Afloat
             _playing = false;
             Debug.Log("GAME OVER");
 
-            StartCoroutine(GameOverCoroutine());
+            _data.GameOver = true;
         }
 
         public void RedGoblinDied()
@@ -132,15 +134,6 @@ namespace Afloat
 #endregion
         
 #region // ## PRIVATE METHODS ##   
-
-
-        private IEnumerator GameOverCoroutine()
-        {
-            yield return TransitionController.TryTransitionOut();
-        }
-
-
-
 #endregion
 
     }
