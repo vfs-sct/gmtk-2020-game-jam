@@ -144,6 +144,8 @@ namespace Afloat
         
         private void OnBeat ()
         {
+            if(Time.timeScale < 0.5f) return;
+
             if(_actionClip != null) AudioSource.PlayClipAtPoint(_actionClip, Camera.main.transform.position);
             _shootEvent.Raise();
         }

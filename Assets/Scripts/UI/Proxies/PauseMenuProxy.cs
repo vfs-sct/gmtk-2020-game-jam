@@ -38,7 +38,6 @@ namespace Afloat.UI.Proxies
 
         public void OnEnable()
         {
-            Debug.Log($"enable");
             _pauseMenuController.OnShow.AddListener(OnShowMenuGroup);
             _pauseMenuController.OnHide.AddListener(OnHideMenuGroup);
         }
@@ -80,16 +79,14 @@ namespace Afloat.UI.Proxies
         
         private void OnShowMenuGroup ()
         {
-            Debug.Log($"AAA");
             _onPauseEvent.Raise();
-            Time.timeScale = 0;
+            Time.timeScale = 0.01f;
         }
 
         private void OnHideMenuGroup ()
         {
-            Debug.Log($"BBB");
             _onUnpauseEvent.Raise();
-            Time.timeScale = 1;
+            Time.timeScale = 1f;
         }
 
         private IEnumerator LoadMainMenu ()

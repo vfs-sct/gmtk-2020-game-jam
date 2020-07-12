@@ -62,6 +62,7 @@ namespace Afloat.UI.Proxies
 
         private IEnumerator LoadSingleplayerRoutine()
         {
+            _menuGroupController.Hide();
             MusicController.GlobalStop();
             yield return TransitionController.TryTransitionOut();
             yield return new LoadSceneJob(1, LoadSceneMode.Single).LoadAndActivate();
