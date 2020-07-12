@@ -2,6 +2,7 @@
     Copyright (C) 2020 Team Triple Double, Diego Castagne
 */
 using System.Collections;
+using Afloat.Events;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,6 +16,8 @@ namespace Afloat
         [SerializeField] private NavMeshAgent _agent = null;
         [SerializeField] private float _sightRange = 5f;
         [SerializeField] private LayerMask _playerLayerMask = default;
+        [SerializeField] private GameEvent _deathEvent = null;
+        [SerializeField] private GameEvent _registerEvent = null;
         // ## PROPERTIES  ##
         public PotionType PotionToKill => _potionToKill;
         // ## PUBLIC VARS ##
@@ -25,6 +28,11 @@ namespace Afloat
         private bool _dead = false;
 
 #region // ## MONOBEHAVIOUR METHODS ##
+
+        private void Awake()
+        {
+            _registerEvent.Raise();
+        }
 
         private void Start()
         {
@@ -85,6 +93,7 @@ namespace Afloat
         private IEnumerator DyingRoutine()
         {
             yield return new WaitForSeconds(_timeToDie);
+            _deathEvent.Raise();
             Destroy(gameObject);
         }
 

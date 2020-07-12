@@ -704,6 +704,8 @@ MonoBehaviour:
   _playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+  _deathEvent: {fileID: 11400000, guid: b40a03cfef9ccf744984b93880471ad4, type: 2}
+  _registerEvent: {fileID: 11400000, guid: 21ecaf202bb7db24ea3b5d775c41de74, type: 2}
 --- !u!195 &-4537038018754827053
 NavMeshAgent:
   m_ObjectHideFlags: 0
