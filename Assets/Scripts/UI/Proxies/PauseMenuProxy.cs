@@ -7,9 +7,11 @@ using System.Collections;
 using Afloat.Events;
 using Afloat.UI.MenuSystem;
 using Afloat.Util.SceneManagement;
+using DG.Tweening;
 
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Afloat.UI.Proxies
 {
@@ -73,17 +75,19 @@ namespace Afloat.UI.Proxies
         private void OnShowMenuGroup ()
         {
             _onPauseEvent.Raise();
+            Time.timeScale = 0;
         }
 
         private void OnHideMenuGroup ()
         {
             _onUnpauseEvent.Raise();
+            Time.timeScale = 1;
         }
 
         private IEnumerator LoadMainMenu ()
         {
             yield return TransitionController.TryTransitionOut();
-            yield return new LoadSceneJob(0).LoadAndActivate();
+            yield return new LoadSceneJob(0, LoadSceneMode.Single).LoadAndActivate();
         }
 
 #endregion

@@ -23,7 +23,7 @@ namespace Afloat.Util
                 
         public static void TryLock ()
         {
-            Lock();
+            // Lock();
             return;
 
             _lockCount = Mathf.Max(0, _lockCount - 1); /// locked is default state
@@ -36,7 +36,7 @@ namespace Afloat.Util
 
         public static void TryUnlock ()
         {
-            Unlock();
+            // Unlock();
             return;
 
             _lockCount++;
