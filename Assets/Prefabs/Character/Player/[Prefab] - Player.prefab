@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6495254354655516788}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10.000002, z: 0.0000014305115}
+  m_LocalPosition: {x: 0, y: 8.000002, z: 0.0000011920929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6495254354685198587}
@@ -390,6 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4118392696219694129}
   - component: {fileID: 6845649538932607288}
+  - component: {fileID: 3980447389361377652}
   m_Layer: 10
   m_Name: Potion Launcher
   m_TagString: Untagged
@@ -423,8 +424,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f455703642f2a4c9ce46e6bbd29350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _potionTypeToShoot: {fileID: 11400000, guid: 551f1f45cc5acc145a5b9aa210bd65a8, type: 2}
+  _potionPouch: {fileID: 3980447389361377652}
   _launchSpeed: 8
+  _playerRigidbody: {fileID: 6495254354889167017}
+--- !u!114 &3980447389361377652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706826899324132013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a65764b7a91e93458e6f4fae94109dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pouch: {fileID: 11400000, guid: 81766129f84b7ef4db2755b303a305f6, type: 2}
+  _possiblePotionTypes:
+  - {fileID: 11400000, guid: 551f1f45cc5acc145a5b9aa210bd65a8, type: 2}
+  - {fileID: 11400000, guid: 044919aa7302b954d8b341781abf8193, type: 2}
+  - {fileID: 11400000, guid: fb4f71eb504a9bf4a9006500689c3853, type: 2}
+  _startingSize: 32
 --- !u!1001 &6934094453936525931
 PrefabInstance:
   m_ObjectHideFlags: 0
