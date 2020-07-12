@@ -16,13 +16,17 @@ namespace Afloat
         [SerializeField] private GameEvent _gameOverEvent;
         [SerializeField] private Transform[] _goblinsSpawnPoints = null;
         [SerializeField] private GameObject[] _goblinsPrefabs = null;
+        [SerializeField] private int _maxGoblins = 30;
         [SerializeField] private float _intervalBetweenSpawns = 5f;
+        [SerializeField] private float _intervalBetweenSpawnsPhase2 = 5f;
+        [SerializeField] private float _intervalBetweenSpawnsPhase3 = 5f;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
         private float _spawnTimer;
         private bool _playing = true;
+        private int _phase = 0;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -31,6 +35,8 @@ namespace Afloat
             _data.BlueGoblinsKilled = 0;
             _data.RedGoblinsKilled = 0;
             _data.GreenGoblinsKilled = 0;
+
+            _data.MaxGoblins = _maxGoblins;
 
             _data.CurrentGoblins = 0;
 
@@ -49,6 +55,20 @@ namespace Afloat
 
         private void Update()
         {
+            if(_data.TimeSurvived > 60 && _phase == 0)
+            {
+                _intervalBetweenSpawns = _intervalBetweenSpawnsPhase2;
+                _data.MaxGoblins *= 2;
+                _phase++;
+            }
+            if(_data.TimeSurvived > 120 && _phase == 1)
+            {
+                _intervalBetweenSpawns = _intervalBetweenSpawnsPhase3;
+                _data.MaxGoblins *= 2;
+                _phase++;
+            }
+
+
             if(_playing == false) return;
 
             _data.TimeSurvived += Time.deltaTime;
@@ -72,6 +92,8 @@ namespace Afloat
             {
                 _spawnTimer = 0f;
             }
+
+
         }
 
 

@@ -91,7 +91,10 @@ MonoBehaviour:
   - {fileID: 5721960703211357870, guid: 4a81e54b8fcbcb441b384423f3b6e812, type: 3}
   - {fileID: 7777230567450707523, guid: 7942c0ba30aead84f80986a6ab151b7e, type: 3}
   - {fileID: 6023093652477735558, guid: 65e4f5a1ff9e79646b20e4452c6cb7ca, type: 3}
-  _intervalBetweenSpawns: 5
+  _maxGoblins: 30
+  _intervalBetweenSpawns: 2
+  _intervalBetweenSpawnsPhase2: 1
+  _intervalBetweenSpawnsPhase3: 0.5
 --- !u!114 &8610107150030360899
 MonoBehaviour:
   m_ObjectHideFlags: 0

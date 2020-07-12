@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6554b401d3e58da4a83d1104693326b9, type: 3}
   m_Name: '[GameData] - Player Data'
   m_EditorClassIdentifier: 
-  TimeSurvived: 160.27353
-  LivesLeft: -78
-  RedGoblinsKilled: 16
-  GreenGoblinsKilled: 15
-  BlueGoblinsKilled: 13
+  TimeSurvived: 11.152617
+  LivesLeft: -1
+  RedGoblinsKilled: 0
+  GreenGoblinsKilled: 0
+  BlueGoblinsKilled: 0
   MaxGoblins: 30
-  CurrentGoblins: 18
+  CurrentGoblins: 5
+  GameOver: 1
