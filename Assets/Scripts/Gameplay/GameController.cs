@@ -20,6 +20,7 @@ namespace Afloat
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
         private float _spawnTimer;
+        private bool _playing = true;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -37,8 +38,17 @@ namespace Afloat
             _spawnTimer = 0f;
         }
 
+        private void Start()
+        {
+            _data.TimeSurvived = 0f;
+        }
+
         private void Update()
         {
+            if(_playing == false) return;
+
+            _data.TimeSurvived += Time.deltaTime;
+
             if(_data.LivesLeft <= 0)
             {
                 _gameOverEvent.Raise();
@@ -66,7 +76,11 @@ namespace Afloat
 #region // ## PUBLIC METHODS ##
 
         public void EndGame()
-        {}
+        {
+            _playing = false;
+            Debug.Log("GAME OVER");
+            Time.timeScale = 0f;
+        }
 
         public void RedGoblinDied()
         {
@@ -98,6 +112,11 @@ namespace Afloat
             var placeToSpawnIn = _goblinsSpawnPoints[Random.Range(0, _goblinsSpawnPoints.Length * _goblinsSpawnPoints.Length) % _goblinsSpawnPoints.Length];
 
             Instantiate(goblinToSpawn, placeToSpawnIn.position, placeToSpawnIn.rotation);
+        }
+
+        public void PlayerDied()
+        {
+            _data.LivesLeft--;
         }
 
 

@@ -290,6 +290,7 @@ MonoBehaviour:
   _turnSpeedSeconds: 0.5
   _potionLauncher: {fileID: 6845649538932607288}
   _respawnPosition: {fileID: 4337383886266245295}
+  _deathEvent: {fileID: 11400000, guid: ca02efbefda1f0247b183f3e9e19c579, type: 2}
   _killZ: 5
 --- !u!114 &3007784052553569969
 MonoBehaviour:
