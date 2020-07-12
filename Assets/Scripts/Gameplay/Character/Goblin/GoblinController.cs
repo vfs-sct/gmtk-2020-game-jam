@@ -18,6 +18,8 @@ namespace Afloat
         [SerializeField] private LayerMask _playerLayerMask = default;
         [SerializeField] private GameEvent _deathEvent = null;
         [SerializeField] private GameEvent _registerEvent = null;
+        [Header("Audio")] 
+        [SerializeField] private AudioSourceController _dyingSFX;
         // ## PROPERTIES  ##
         public PotionType PotionToKill => _potionToKill;
         // ## PUBLIC VARS ##
@@ -76,7 +78,11 @@ namespace Afloat
             _rbd.constraints = RigidbodyConstraints.None;
             _rbd.isKinematic = false;
             _dead = true;
-            // You can play the sound here
+
+            _dyingSFX.PlayImmediately();
+            _dyingSFX.transform.parent = null;
+            Destroy(_dyingSFX.gameObject, _dyingSFX.GetComponent<AudioSource>().clip.length);
+
             StartCoroutine(DyingRoutine());
         }
 
