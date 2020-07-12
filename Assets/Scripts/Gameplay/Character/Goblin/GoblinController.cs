@@ -21,6 +21,7 @@ namespace Afloat
         [SerializeField] private float _timeToKillPlayer = 0.5f;
         [SerializeField] private float _durationSlowedDown = 3f;
         [SerializeField] private float _durationStopped = 0.5f;
+        [SerializeField] private float _factorToSlowDown = 0.8f;
         [Header("Audio")] 
         [SerializeField] private AudioSourceController _dyingSFX;
         // ## PROPERTIES  ##
@@ -112,11 +113,11 @@ namespace Afloat
             StartCoroutine(DyingRoutine());
         }
 
-        public void SlowDown(float factor)
+        public void SlowDown()
         {
             StartCoroutine(SlowedDownRoutine(_durationSlowedDown, _agent.speed));
 
-            _agent.speed *= factor;
+            _agent.speed *= _factorToSlowDown;
             _agent.isStopped = true;
         }
 
