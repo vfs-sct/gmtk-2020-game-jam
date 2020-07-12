@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 6495254354655516790}
-  _shakeIntensity: 4
-  _shakeDuration: 0.3
+  _shakeIntensity: 3.5
+  _shakeDuration: 0.35
 --- !u!114 &7415159139880361908
 MonoBehaviour:
   m_ObjectHideFlags: 0
