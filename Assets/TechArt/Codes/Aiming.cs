@@ -6,6 +6,8 @@ public class Aiming : MonoBehaviour
 {
     [SerializeField]
     private float aimRange = 5f;
+    [SerializeField]
+    private LayerMask enemyLayer = default;
 
     private LineRenderer lineRenderer;
 
@@ -20,9 +22,11 @@ public class Aiming : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        lineRenderer.SetPosition(0, transform.position);
+
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.right, out hit,aimRange))
+        if (Physics.Raycast(transform.position, transform.right, out hit,aimRange, enemyLayer))
         {
             if (hit.collider != null)
             {
@@ -31,7 +35,7 @@ public class Aiming : MonoBehaviour
         }
         else
         {
-            lineRenderer.SetPosition(1, transform.right*aimRange);
+            lineRenderer.SetPosition(1, transform.right*aimRange + transform.position);
         }
     }
 }
