@@ -30,15 +30,19 @@ namespace Afloat
         public override void Show (float fadeTime)
         {
             base.Show(fadeTime);
-            _text.DOColor(_highlightColor, fadeTime);
-            _fill.DOColor(_highlightColor, fadeTime);
+            _text.DOColor(_highlightColor, fadeTime)
+                .SetUpdate(true);
+            _fill.DOColor(_highlightColor, fadeTime)
+                .SetUpdate(true);
         }
 
         public override void Hide (float fadeTime)
         {
             base.Hide(fadeTime);
-            _text.DOColor(_defaultColor, fadeTime);
-            _fill.DOColor(_defaultColor, fadeTime);
+            _text.DOColor(_defaultColor, fadeTime)
+                .SetUpdate(true);
+            _fill.DOColor(_defaultColor, fadeTime)
+                .SetUpdate(true);
         }
         
 #endregion       

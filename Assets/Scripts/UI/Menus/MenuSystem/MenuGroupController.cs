@@ -145,6 +145,7 @@ namespace Afloat.UI.MenuSystem
         {
             yield return _parentCanvasGroup
                 .DOFade(amount, _data.FadeTime)
+                .SetUpdate(true)
                 .WaitForCompletion();
         }
 
