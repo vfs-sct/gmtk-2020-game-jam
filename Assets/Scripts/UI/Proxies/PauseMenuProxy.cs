@@ -57,6 +57,11 @@ namespace Afloat.UI.Proxies
             _pauseMenuController.Hide();
         }
 
+        public void Retry ()
+        {
+            StartCoroutine(LoadGame());
+        }
+
         public void ExitToMainMenu ()
         {
             StartCoroutine(LoadMainMenu());   
@@ -88,6 +93,12 @@ namespace Afloat.UI.Proxies
         {
             yield return TransitionController.TryTransitionOut();
             yield return new LoadSceneJob(0, LoadSceneMode.Single).LoadAndActivate();
+        }
+
+        private IEnumerator LoadGame ()
+        {
+            yield return TransitionController.TryTransitionOut();
+            yield return new LoadSceneJob(1, LoadSceneMode.Single).LoadAndActivate();
         }
 
 #endregion
