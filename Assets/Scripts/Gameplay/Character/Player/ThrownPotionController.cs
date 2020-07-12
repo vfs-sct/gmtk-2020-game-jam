@@ -9,6 +9,8 @@ namespace Afloat
     {
         // ## UNITY EDITOR ##
         [SerializeField] private PotionType _potionType = null;
+        [SerializeField] private float _splashRange = 0.5f;
+        [SerializeField] private LayerMask _goblinsLayerMask = default;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
@@ -18,12 +20,17 @@ namespace Afloat
 
         private void OnCollisionEnter(Collision other)
         {
-            if(other.gameObject.TryGetComponent<GoblinController>(out GoblinController goblin))
+            var colliders = Physics.OverlapSphere(transform.position, _splashRange, _goblinsLayerMask, QueryTriggerInteraction.Ignore);
+            
+            foreach (Collider col in colliders)
             {
-                if(_potionType == goblin.PotionToKill)
+                if(col.gameObject.TryGetComponent<GoblinController>(out GoblinController goblin))
                 {
-                    goblin.Die();
-                    // Raise a kill goblin event for score purposes
+                    if(_potionType == goblin.PotionToKill)
+                    {
+                        goblin.Die();
+                        // Raise a kill goblin event for score purposes
+                    }
                 }
             }
 

@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 7315532104657468081}
   - component: {fileID: 5498711852307651703}
   m_Layer: 9
-  m_Name: '[Prefab] - Potion'
+  m_Name: '[Prefab] - Red Potion'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,6 +159,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _potionType: {fileID: 11400000, guid: 551f1f45cc5acc145a5b9aa210bd65a8, type: 2}
+  _splashRange: 0.5
+  _goblinsLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &7315532105051117481
 GameObject:
   m_ObjectHideFlags: 0
