@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 197801168}
     m_Modifications:
+    - target: {fileID: 5333299959557869460, guid: 6a0d4313df57f5441925d2b083e0d3f5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9043688056930761264, guid: 6a0d4313df57f5441925d2b083e0d3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -187,11 +192,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[Prefab] - Splash Green VFX'
-      objectReference: {fileID: 0}
-    - target: {fileID: 9043688056930761279, guid: 6a0d4313df57f5441925d2b083e0d3f5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a0d4313df57f5441925d2b083e0d3f5, type: 3}
@@ -254,11 +254,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Splash Red VFX'
       objectReference: {fileID: 0}
-    - target: {fileID: 5190082329919518789, guid: 2d867dc39f2a14c46ba038c4887e22fe,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5190082329919518794, guid: 2d867dc39f2a14c46ba038c4887e22fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,6 +308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187516387160970070, guid: 2d867dc39f2a14c46ba038c4887e22fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d867dc39f2a14c46ba038c4887e22fe, type: 3}
@@ -732,10 +732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Splash Blue VFX'
       objectReference: {fileID: 0}
-    - target: {fileID: 5032629248404539278, guid: 5821ba81a7c831f478a6035911978186,
+    - target: {fileID: 6354738209719906380, guid: 5821ba81a7c831f478a6035911978186,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5821ba81a7c831f478a6035911978186, type: 3}
@@ -1109,7 +1109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306478829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.15, y: 0, z: -1.02}
+  m_LocalPosition: {x: -1.15, y: 0, z: -3.157}
   m_LocalScale: {x: 3.8309, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1377210225}
@@ -2139,7 +2139,7 @@ PrefabInstance:
     - target: {fileID: 3127913824200223335, guid: 9102578746bd8334bb085139c20d17e7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9102578746bd8334bb085139c20d17e7, type: 3}
@@ -2219,7 +2219,7 @@ PrefabInstance:
     - target: {fileID: 4926094835297396941, guid: fb0a55e35bb528542ab4ec58aa144a58,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb0a55e35bb528542ab4ec58aa144a58, type: 3}
@@ -2640,7 +2640,7 @@ PrefabInstance:
     - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
         type: 3}
@@ -2720,7 +2720,7 @@ PrefabInstance:
     - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
         type: 3}
