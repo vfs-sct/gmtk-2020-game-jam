@@ -9,6 +9,8 @@ public class AudioSourceController : MonoBehaviour {
     public AudioSource source;
     public AudioMixerGroup mixerGroup;
 
+    [SerializeField] public bool _useSequencial;
+
     [Range(-80f,0f)]
     [SerializeField] private float volume = 0.0f;
     [Range(-12f,0)]
@@ -23,6 +25,8 @@ public class AudioSourceController : MonoBehaviour {
     [Range(0f,24f)]
     [SerializeField] private float randomPitchMax = 0.0f;
 
+    private int counter;
+
     public void TryPlay()
     {
         if(!source.isPlaying) PlayImmediately();
@@ -36,8 +40,17 @@ public class AudioSourceController : MonoBehaviour {
 
     public void PlayImmediately()
     {
-        AudioClip clipToPlay = sounds[Random.Range(0, sounds.Length)];
-        source.clip = clipToPlay;
+        if(_useSequencial)
+        {
+            AudioClip clipToPlay = sounds[counter % sounds.Length];
+            source.clip = clipToPlay;
+            counter++;
+        }
+        else
+        {
+            AudioClip clipToPlay = sounds[Random.Range(0, sounds.Length)];
+            source.clip = clipToPlay;
+        }
 
         source.outputAudioMixerGroup = mixerGroup;
 
