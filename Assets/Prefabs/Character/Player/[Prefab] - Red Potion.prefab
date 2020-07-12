@@ -437,7 +437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efa8aa517d38b745a034f0a1a309fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _potionType: {fileID: 11400000, guid: 044919aa7302b954d8b341781abf8193, type: 2}
+  _potionType: {fileID: 11400000, guid: 551f1f45cc5acc145a5b9aa210bd65a8, type: 2}
+  _splashRange: 0.5
+  _goblinsLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1001 &1883714779922315969
 PrefabInstance:
   m_ObjectHideFlags: 0
