@@ -654,6 +654,7 @@ MonoBehaviour:
   source: {fileID: 2462604840420946962}
   mixerGroup: {fileID: -3131367771171368755, guid: ad15f783bf8c09a459e9a2b66337c5d0,
     type: 2}
+  _useSequencial: 0
   volume: 0
   randomVolMin: 0
   randomVolMax: 0
@@ -681,7 +682,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1017,6 +1018,7 @@ MonoBehaviour:
   source: {fileID: 5052490421173647445}
   mixerGroup: {fileID: -1121247778340097603, guid: ad15f783bf8c09a459e9a2b66337c5d0,
     type: 2}
+  _useSequencial: 0
   volume: 0
   randomVolMin: -0.67
   randomVolMax: 0.63
