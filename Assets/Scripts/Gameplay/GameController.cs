@@ -12,10 +12,14 @@ namespace Afloat
         [SerializeField] private GameData _data = null;
         [SerializeField] private int _startingLives;
         [SerializeField] private GameEvent _gameOverEvent;
+        [SerializeField] private Transform[] _goblinsSpawnPoints = null;
+        [SerializeField] private GameObject[] _goblinsPrefabs = null;
+        [SerializeField] private float _intervalBetweenSpawns = 5f;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
+        private float _spawnTimer;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -29,6 +33,8 @@ namespace Afloat
 
             _data.TimeSurvived = 0f;
             _data.LivesLeft = _startingLives;
+
+            _spawnTimer = 0f;
         }
 
         private void Update()
@@ -36,6 +42,21 @@ namespace Afloat
             if(_data.LivesLeft <= 0)
             {
                 _gameOverEvent.Raise();
+            }
+
+            if(_data.CurrentGoblins < _data.MaxGoblins)
+            {
+                _spawnTimer += Time.deltaTime;
+
+                if(_spawnTimer > _intervalBetweenSpawns)
+                {
+                    _spawnTimer = 0f;
+                    SpawnGoblinRandomly();
+                }
+            }
+            else
+            {
+                _spawnTimer = 0f;
             }
         }
 
@@ -70,6 +91,15 @@ namespace Afloat
             _data.CurrentGoblins++;
         }
 
+        public void SpawnGoblinRandomly()
+        {
+            var goblinToSpawn = _goblinsPrefabs[Random.Range(0, _goblinsPrefabs.Length * _goblinsPrefabs.Length) % _goblinsPrefabs.Length];
+
+            var placeToSpawnIn = _goblinsSpawnPoints[Random.Range(0, _goblinsSpawnPoints.Length * _goblinsSpawnPoints.Length) % _goblinsSpawnPoints.Length];
+
+            Instantiate(goblinToSpawn, placeToSpawnIn.position, placeToSpawnIn.rotation);
+        }
+
 
 #endregion
         
@@ -80,6 +110,9 @@ namespace Afloat
 #endregion
         
 #region // ## PRIVATE METHODS ##   
+
+
+
 #endregion
 
     }

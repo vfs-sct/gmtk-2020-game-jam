@@ -18,6 +18,5 @@ namespace Afloat
         public int CurrentGoblins;
 
         public int TotalGoblinsKilled => RedGoblinsKilled + GreenGoblinsKilled + BlueGoblinsKilled;
-
     }
 }
