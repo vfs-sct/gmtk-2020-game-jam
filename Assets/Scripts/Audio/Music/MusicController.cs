@@ -75,7 +75,7 @@ namespace Afloat
             _playRoutine = new CoroutineHandler(this);
 
             PlayTrack(_trackList[_lastTrackIndex]);
-            _lastTrackIndex = (_lastTrackIndex + 1) & _trackList.Length;
+            _lastTrackIndex = (_lastTrackIndex + 1) % _trackList.Length;
         }
         
 #endregion      
