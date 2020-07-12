@@ -709,7 +709,8 @@ MonoBehaviour:
     m_Bits: 1024
   _deathEvent: {fileID: 11400000, guid: b40a03cfef9ccf744984b93880471ad4, type: 2}
   _registerEvent: {fileID: 11400000, guid: 21ecaf202bb7db24ea3b5d775c41de74, type: 2}
-  _timeToKillPlayer: 0.2
+  _dyingSFX: {fileID: 2960768505410991794}
+  _timeToKillPlayer: 0.5
 --- !u!114 &-5144587128536115505
 MonoBehaviour:
   m_ObjectHideFlags: 0
