@@ -3538,6 +3538,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Image] - Background Fullscreen'
       objectReference: {fileID: 0}
+    - target: {fileID: 3937953726725491987, guid: 8610e6b3be7e0444faf0e78330407b2e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.06649308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937953726725491987, guid: 8610e6b3be7e0444faf0e78330407b2e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.20754719
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937953726725491987, guid: 8610e6b3be7e0444faf0e78330407b2e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.047970816
+      objectReference: {fileID: 0}
     - target: {fileID: 6929409240381156331, guid: 8610e6b3be7e0444faf0e78330407b2e,
         type: 3}
       propertyPath: m_LocalPosition.x
