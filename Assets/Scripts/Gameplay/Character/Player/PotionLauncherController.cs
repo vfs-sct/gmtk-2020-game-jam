@@ -8,8 +8,9 @@ namespace Afloat
     public class PotionLauncherController : MonoBehaviour
     {
         // ## UNITY EDITOR ##
-        [SerializeField] private PotionType _potionTypeToShoot = null; // this is for now, but we'll get this from the "pouch"
+        [SerializeField] private PotionPouchController _potionPouch = null;
         [SerializeField] private float _launchSpeed = 8f;
+        [SerializeField] private Rigidbody _playerRigidbody = null;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
@@ -22,12 +23,14 @@ namespace Afloat
 
         public void ShootNextPotion()
         {
-            Debug.Log($"I just shot a {_potionTypeToShoot.Name}");
+            PotionType potionToShoot = _potionPouch.GetNextPotionType();
+
+            Debug.Log($"I just shot a {potionToShoot.Name}");
             
-            var potion = Instantiate(_potionTypeToShoot.PotionPrefab, transform.position, transform.rotation);
+            var potion = Instantiate(potionToShoot.PotionPrefab, transform.position, transform.rotation);
             if(potion.TryGetComponent<Rigidbody>(out Rigidbody potionRBD))
             {
-                potionRBD.velocity = transform.forward * _launchSpeed;
+                potionRBD.velocity = (transform.forward * _launchSpeed) + _playerRigidbody.velocity;
             }
         }
 

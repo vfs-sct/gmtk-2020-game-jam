@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Afloat
 {
-    [CreateAssetMenu( fileName = "PotionType", menuName = "Custom/PotionType" )]
+    [CreateAssetMenu( fileName = "PotionType", menuName = "Custom/Potions/PotionType" )]
     public class PotionType : ScriptableObject
     {
         public string Name;
