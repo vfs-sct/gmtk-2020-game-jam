@@ -22,7 +22,7 @@ namespace Afloat
         // ## UNITY EDITOR ##
 
         [SerializeField] private EventTrigger _targetTrigger;
-
+		[SerializeField] private AudioSourceController _sound;
 
         // ## PUBLIC MEMBERS ##
         
@@ -70,6 +70,8 @@ namespace Afloat
 
         public virtual void Show(float fadeTime)
         {
+            if(_sound != null ) _sound.PlayImmediately();
+            
             CanvasGroup.DOFade(1, fadeTime / 3f);
             
             for (int i = 0; i < transform.childCount; i++)
