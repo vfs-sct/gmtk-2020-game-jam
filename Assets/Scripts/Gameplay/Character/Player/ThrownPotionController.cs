@@ -1,6 +1,7 @@
 ﻿/*
     Copyright (C) 2020 Team Triple Double, Diego Castagne
 */
+using Afloat.Events;
 using UnityEngine;
 
 namespace Afloat
@@ -13,6 +14,7 @@ namespace Afloat
         [SerializeField] private LayerMask _goblinsLayerMask = default;
         [Header("Audio")]
         [SerializeField] private AudioSourceController _explosionSFX;
+        [SerializeField] private GameEvent _potionExplosion = null;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
@@ -42,6 +44,8 @@ namespace Afloat
             Destroy(_explosionSFX.gameObject, _explosionSFX.GetComponent<AudioSource>().clip.length);
 
             var vfx = Instantiate(_potionType.VFXPrefab, transform.position, Quaternion.identity);
+
+            _potionExplosion.Raise();
             
             Destroy(vfx, 5f);
             Destroy(gameObject);

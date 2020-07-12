@@ -410,6 +410,7 @@ MonoBehaviour:
   source: {fileID: 6416184600980862438}
   mixerGroup: {fileID: -3131367771171368755, guid: ad15f783bf8c09a459e9a2b66337c5d0,
     type: 2}
+  _useSequencial: 0
   volume: 0
   randomVolMin: -2.9
   randomVolMax: 2.54
@@ -595,6 +596,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   _explosionSFX: {fileID: 2583326635016659766}
+  _potionExplosion: {fileID: 11400000, guid: 34a63609e21d30146b573c13ce4e4211, type: 2}
 --- !u!1001 &1883714779922315969
 PrefabInstance:
   m_ObjectHideFlags: 0

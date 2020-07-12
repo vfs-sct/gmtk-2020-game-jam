@@ -40,6 +40,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6495254354655516791}
   - component: {fileID: 6495254354655516790}
+  - component: {fileID: 6488031099618886472}
+  - component: {fileID: 7415159139880361908}
   m_Layer: 10
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -104,6 +106,48 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 6495254354685198587}
+--- !u!114 &6488031099618886472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495254354655516788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204dea10aca2cc44e8e997bc6a2b4ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 6495254354655516790}
+  _shakeIntensity: 4
+  _shakeDuration: 0.3
+--- !u!114 &7415159139880361908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495254354655516788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9226f4dc4e51144b0860a343be4b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: 34a63609e21d30146b573c13ce4e4211, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6488031099618886472}
+        m_MethodName: ShakeCameraPotion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6495254354685198584
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +159,7 @@ GameObject:
   - component: {fileID: 6495254354685198587}
   - component: {fileID: 6495254354685198588}
   - component: {fileID: 6495254354685198586}
+  - component: {fileID: 4777812722288434080}
   m_Layer: 10
   m_Name: cm
   m_TagString: Untagged
@@ -190,6 +235,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &4777812722288434080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495254354685198584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 10
+  mNoiseOffsets: {x: 504.73425, y: -829.16956, z: -919.338}
 --- !u!1 &6495254354889166996
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,15 +841,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5ea2fabd98ad1c449d0cb5959120050, type: 3}
---- !u!4 &7745022033209180245 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 810932344702980670, guid: c5ea2fabd98ad1c449d0cb5959120050,
-    type: 3}
-  m_PrefabInstance: {fileID: 6934094453936525931}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &8333991282807375343 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -7813021048977549436, guid: c5ea2fabd98ad1c449d0cb5959120050,
+    type: 3}
+  m_PrefabInstance: {fileID: 6934094453936525931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7745022033209180245 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 810932344702980670, guid: c5ea2fabd98ad1c449d0cb5959120050,
     type: 3}
   m_PrefabInstance: {fileID: 6934094453936525931}
   m_PrefabAsset: {fileID: 0}
