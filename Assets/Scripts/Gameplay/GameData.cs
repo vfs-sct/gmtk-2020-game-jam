@@ -19,5 +19,10 @@ namespace Afloat
 
         public int TotalGoblinsKilled => RedGoblinsKilled + GreenGoblinsKilled + BlueGoblinsKilled;
         public bool GameOver;
+
+        public override string ToString()
+        {
+            return (int)TimeSurvived + " seconds";
+        }
     }
 }
