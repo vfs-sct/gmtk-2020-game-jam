@@ -88,7 +88,70 @@ namespace Afloat.Util.BuildCLI
 
 #region // ## PRODUCTION METHODS ##   
                 
-        
+    public class Production
+    {
+        // Function: Windows
+        // Does a standard build of Windows.
+        // Access from CLI using `-executeMethod Afloat.Util.BuildCLI.Production.Windows "C:/Path/To/Your/Exe/Destination/Folder"`.
+        [MenuItem("Build/Production/Windows")]
+        public static void Windows ()
+        {
+            new DevelopmentBuilder().Build(BuildTarget.StandaloneWindows64);
+        }   
+
+        // Function: WindowsScripts
+        // Rebuilds all scripts for Windows.
+        // Access from CLI using `-executeMethod Afloat.Util.BuildCLI.Production.WindowsScripts "C:/Path/To/Your/Exe/Destination/Folder"`.
+        [MenuItem("Build/Production/Windows Scripts Rebuild", false, 100)]
+        public static void WindowsScripts ()
+        {
+            new DevelopmentBuilder().RebuildScripts(BuildTarget.StandaloneWindows64);
+        }
+
+
+
+
+        // Function: OSX
+        // Does a standard build of MacOSX.
+        // Access from CLI using `-executeMethod Afloat.Util.BuildCLI.Production.OSX "C:/Path/To/Your/Exe/Destination/Folder"`.
+        [MenuItem("Build/Production/MacOSX")]
+        public static void OSX ()
+        {
+            new DevelopmentBuilder().Build(BuildTarget.StandaloneOSX);
+        }   
+
+        // Function: OSXScripts
+        // Rebuilds all scripts for Windows.
+        // Access from CLI using `-executeMethod Afloat.Util.BuildCLI.Production.OSXScripts "C:/Path/To/Your/Exe/Destination/Folder"`.
+        [MenuItem("Build/Production/MacOSX Scripts Rebuild", false, 100)]
+        public static void OSXScripts ()
+        {
+            new ProductionBuilder().RebuildScripts(BuildTarget.StandaloneOSX);
+        }
+
+
+
+
+        // Function: Linux
+        // Does a standard build of Linux.
+        // Access from CLI using `-executeMethod Afloat.Util.BuildCLI.Production.Linux "C:/Path/To/Your/Exe/Destination/Folder"`.
+        [MenuItem("Build/Production/Linux")]
+        public static void Linux ()
+        {
+            // TODO: validate this once we fix Wwise integration
+            new ProductionBuilder().Build(BuildTarget.StandaloneLinux64);
+        }
+
+        // Function: LinuxScripts
+        // Rebuilds all scripts for Linux.
+        // Access from CLI using `-executeMethod Afloat.Util.BuildCLI.Production.LinuxScripts "C:/Path/To/Your/Exe/Destination/Folder"`.
+        [MenuItem("Build/Production/Linux Scripts Rebuild", false, 100)]
+        public static void LinuxScripts ()
+        {
+            new ProductionBuilder().RebuildScripts(BuildTarget.StandaloneLinux64);
+        }
+
+    }
         
 #endregion
 

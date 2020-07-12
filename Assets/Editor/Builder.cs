@@ -30,7 +30,7 @@ namespace Afloat.Util
         
         // ## PUBLIC VARS ##
 
-        public string DeliverableName = "Afloat.exe";
+        public string DeliverableName = "Club Goblin.exe";
 
 
 
