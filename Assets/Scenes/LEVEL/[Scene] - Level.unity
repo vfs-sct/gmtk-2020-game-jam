@@ -1594,6 +1594,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 58602396}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &60711831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 97356000}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &60869572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1833,6 +1839,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7942c0ba30aead84f80986a6ab151b7e, type: 3}
+--- !u!1001 &65052522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9635587
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.18049
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.53937876
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &65052523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 65052522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &66821285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2073,6 +2154,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 69950988}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &70117400
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &72543577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2602,6 +2767,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1198728861714876445, guid: 5ae34fe3b9c92c447b94077b7311864f,
     type: 3}
   m_PrefabInstance: {fileID: 80618804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &82453033 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2103237965}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &83597345
 PrefabInstance:
@@ -3224,6 +3395,90 @@ Transform:
   m_Father: {fileID: 1123489914}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1001 &97356000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (11)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.58443415
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3980412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3980412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.58443415
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -68.51501
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.84028965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.84028983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.84028983
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &98767266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4214,6 +4469,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 139331331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &139969222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139969223}
+  m_Layer: 0
+  m_Name: Blur Circles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &139969223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139969222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 315849314}
+  - {fileID: 1488437333}
+  - {fileID: 82453033}
+  - {fileID: 1703354684}
+  - {fileID: 1636504889}
+  - {fileID: 2135551114}
+  - {fileID: 557112319}
+  - {fileID: 2133237400}
+  - {fileID: 493472364}
+  - {fileID: 628788169}
+  - {fileID: 1879811360}
+  - {fileID: 60711831}
+  - {fileID: 1331091693}
+  m_Father: {fileID: 897743240}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &149733213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4384,6 +4682,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 152601421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &158815983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (5)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.719999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1 &159916759
 GameObject:
   m_ObjectHideFlags: 0
@@ -6223,6 +6605,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 282048683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &293764269
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (1)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.18049
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &293764270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 293764269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &297743856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6577,6 +7034,12 @@ Transform:
   m_Father: {fileID: 1222210852}
   m_RootOrder: 340
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &315849314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 70117400}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &319604542
 GameObject:
   m_ObjectHideFlags: 0
@@ -7105,6 +7568,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 343552322}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &349203510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (4)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &349203511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 349203510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &355337376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7190,6 +7728,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 355337376}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &357947337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (6)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.455001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.729
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &365779775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9769,6 +10391,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 476150826}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &492095853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (1)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.79694
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5835705
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.949747
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &492095854 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 492095853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &493472364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 841461772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &493708725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10548,6 +11251,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 553707183}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &557112319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 357947337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &558638631
 GameObject:
   m_ObjectHideFlags: 0
@@ -10642,6 +11351,50 @@ Transform:
   m_Father: {fileID: 1222210852}
   m_RootOrder: 344
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &567480838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567480839}
+  m_Layer: 0
+  m_Name: Hexagons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &567480839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567480838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 65052523}
+  - {fileID: 293764270}
+  - {fileID: 1143932235}
+  - {fileID: 1626258039}
+  - {fileID: 1003578556}
+  - {fileID: 1869885749}
+  - {fileID: 349203511}
+  - {fileID: 1644280096}
+  - {fileID: 1142273399}
+  - {fileID: 1522252910}
+  - {fileID: 1498111180}
+  - {fileID: 1667847214}
+  - {fileID: 492095854}
+  - {fileID: 2007899451}
+  m_Father: {fileID: 897743240}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &571150172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10832,6 +11585,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 588037740}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &589992972
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (9)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.9192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.017226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &590345614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11469,6 +12306,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6319603217666734112, guid: d67dccc5a9e02464caa4dcef1db2a54a,
     type: 3}
   m_PrefabInstance: {fileID: 624414463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &628788169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 589992972}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629896493
 PrefabInstance:
@@ -12119,6 +12962,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 666976159}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &669046765
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (10)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.316
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4259987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.017226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &669805080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15442,6 +16369,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b79aa9b2e53ca9429b657f7beb324a2, type: 3}
+--- !u!1001 &841461772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (8)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.017226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &845177737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16701,7 +17712,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 139969223}
+  - {fileID: 567480839}
+  - {fileID: 1470364985}
   m_Father: {fileID: 1229719226}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18719,6 +19733,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 991509824}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1003578555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (2)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1003578556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1003578555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1036699639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19242,6 +20331,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1062436237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1065697650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.0264063
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5645341
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223328, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127913824200223335, guid: 9102578746bd8334bb085139c20d17e7,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Lines VFX'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9102578746bd8334bb085139c20d17e7, type: 3}
 --- !u!1001 &1078932977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19432,6 +20590,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1098221454}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1104391381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (12)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.58443415
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3980412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3980412
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.58443415
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -68.51501
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.84028965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.84028983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.84028983
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &1105396594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19754,7 +20996,7 @@ Transform:
   - {fileID: 1290396003}
   - {fileID: 2063133919}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1125019466
 PrefabInstance:
@@ -19937,6 +21179,165 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 800221021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1131153768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (7)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.537
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.017226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0172261
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
+--- !u!1001 &1142273398
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (5)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.9765544
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8549995
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.487438
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1142273399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1142273398}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1143168157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20016,6 +21417,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6319603217666734112, guid: d67dccc5a9e02464caa4dcef1db2a54a,
     type: 3}
   m_PrefabInstance: {fileID: 1143168157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1143932234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.354221
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6607069
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1143932235 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1143932234}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1146445721
 PrefabInstance:
@@ -20337,6 +21813,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1160727313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1161242850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (4)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &1163433372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20417,6 +21977,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1163433372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1164473083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (3)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &1173913682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21957,7 +23601,7 @@ Transform:
   - {fileID: 128814106}
   - {fileID: 1752685460}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1228749915
 PrefabInstance:
@@ -22070,7 +23714,7 @@ Transform:
   - {fileID: 1920796729}
   - {fileID: 897743240}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1231968873
 PrefabInstance:
@@ -22215,7 +23859,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1254102900
 PrefabInstance:
@@ -23970,6 +25614,12 @@ Transform:
   m_Father: {fileID: 1222210852}
   m_RootOrder: 349
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1331091693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1104391381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1331368395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24375,6 +26025,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1351565198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1367591915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (1)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &1369913062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26069,6 +27803,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1462801844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1470364984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470364985}
+  m_Layer: 0
+  m_Name: Lines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470364985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470364984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 897743240}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1472476706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26484,6 +28248,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1482201351}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1488437333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1367591915}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1494986552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26573,6 +28343,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 607343923635553533, guid: 967eb7416df6d7a498f9273bbcb93806,
     type: 3}
   m_PrefabInstance: {fileID: 1494986552}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1498111179
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (3)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.40458
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5827475
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.678772
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1498111180 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1498111179}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1513561109 stripped
 GameObject:
@@ -26693,6 +28538,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1198728861714876445, guid: 5ae34fe3b9c92c447b94077b7311864f,
     type: 3}
   m_PrefabInstance: {fileID: 1514915329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1522252909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (4)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8549995
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1522252910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1522252909}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1529552833
 PrefabInstance:
@@ -28247,7 +30167,7 @@ PrefabInstance:
     - target: {fileID: 8610107150030360903, guid: b7fd0e978092e7b42a0516bd63005b13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8610107150030360903, guid: b7fd0e978092e7b42a0516bd63005b13,
         type: 3}
@@ -28957,6 +30877,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1621551644}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1626258038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (1)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6607069
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1626258039 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1626258038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1626344681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29251,6 +31246,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6319603217666734112, guid: d67dccc5a9e02464caa4dcef1db2a54a,
     type: 3}
   m_PrefabInstance: {fileID: 1630040227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1636504889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1161242850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1644280095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (5)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.309292
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1644280096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1644280095}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1644777054
 PrefabInstance:
@@ -30160,6 +32236,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1661665278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1667847213
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (2)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.962292
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.582555
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.708697
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1667847214 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1667847213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1672070100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30845,6 +32996,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1699019781}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1703354684 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1164473083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1707151185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30991,7 +33148,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1718625494
 PrefabInstance:
@@ -31857,7 +34014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1750639322
 PrefabInstance:
@@ -34414,6 +36571,81 @@ Transform:
   m_Father: {fileID: 1123489914}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1001 &1869885748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX (3)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.354221
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &1869885749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1869885748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1874692875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34493,6 +36725,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6319603217666734112, guid: d67dccc5a9e02464caa4dcef1db2a54a,
     type: 3}
   m_PrefabInstance: {fileID: 1874692875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1879811360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 669046765}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1882453431
 PrefabInstance:
@@ -37008,6 +39246,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2004161443}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2007899450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 567480839}
+    m_Modifications:
+    - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Hexagonons VFX'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.5790772
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.582766
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.687736
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6248c70f0afcb6448b7874723f494f4b, type: 3}
+--- !u!4 &2007899451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2007899450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2008810840
 GameObject:
   m_ObjectHideFlags: 0
@@ -39289,6 +41602,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2103002718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2103237965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 139969223}
+    m_Modifications:
+    - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Prefab] - Dance Floor Blur Circles VFX (2)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7138
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7138002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66aa4b35435887544b39288348eddf3c, type: 3}
 --- !u!1001 &2119446400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39718,6 +42115,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7086906072448488853, guid: 3b79aa9b2e53ca9429b657f7beb324a2,
     type: 3}
   m_PrefabInstance: {fileID: 2133186256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2133237400 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1131153768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2135551114 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 158815983}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2143535637
 PrefabInstance:
