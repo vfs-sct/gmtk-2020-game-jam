@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HDRPDefault/Scenes/samplescene.unity
-    guid: cbfe36cfddfde964d9dfce63a355d5dd
+    path: Assets/Scenes/LEVEL/[Scene] - MainMenu.unity
+    guid: 4a0c3d5fe32970e40bc62713e35b1c33
+  - enabled: 1
+    path: Assets/Scenes/DEV/[Scene] - Sabastian Sandbox.unity
+    guid: 77e6253b9c0f96147991b72b7f522823
   m_configObjects: {}

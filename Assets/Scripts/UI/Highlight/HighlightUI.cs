@@ -41,7 +41,7 @@ namespace Afloat
             Hide(0);
 
 
-            float fadeTime = 0.4f;
+            float fadeTime = 0.25f;
             
 
             // Hover Start
