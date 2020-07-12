@@ -52272,6 +52272,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.00000086426735
       objectReference: {fileID: 0}
+    - target: {fileID: 6495254354889167019, guid: acd62a1991cd9ae44b7b5a770632532a,
+        type: 3}
+      propertyPath: _usingMouseAim
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6495254356277990282, guid: acd62a1991cd9ae44b7b5a770632532a,
         type: 3}
       propertyPath: m_LocalPosition.x

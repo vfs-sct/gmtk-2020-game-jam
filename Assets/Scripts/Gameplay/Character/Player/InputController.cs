@@ -22,6 +22,7 @@ namespace Afloat
         // ## PRIVATE UTIL VARS ##
         private Vector2 _moveInput;
         private Vector2 _aimInput;
+        private bool _usingMouseAim = false;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -56,10 +57,33 @@ namespace Afloat
             }
 
             // Moves player's aim
-            if(aimInput.sqrMagnitude != 0)
+            if(Input.GetAxis("Mouse X") > 0f || Input.GetAxis("Mouse Y") > 0f)
             {
-                _targetPlayer.Aim(_aimInput);
+                _usingMouseAim = true;
             }
+
+            if(aimInput != Vector2.zero)
+            {
+                _usingMouseAim = false;
+            }
+
+            if(_usingMouseAim == false)
+            {
+                if(aimInput.sqrMagnitude != 0)
+                {
+                    _targetPlayer.Aim(_aimInput);
+                }
+            }
+            else
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if(new Plane(Vector3.up, Vector3.zero + (Vector3.up * transform.position.y)).Raycast(ray, out float distance) == false) return;
+                Vector3 intersectPos = ray.GetPoint(distance);
+                Vector2 aimVector = new Vector2((intersectPos - transform.position).x, (intersectPos - transform.position).z);
+                _targetPlayer.Aim(aimVector); 
+            }
+
+
         }
 
 #endregion
