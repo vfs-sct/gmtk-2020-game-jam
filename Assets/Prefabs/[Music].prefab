@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77351d15c1b14045998943d83f33adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingTrack: {fileID: 11400000, guid: 1111288bf57d3c549b2ea80c8995d10f, type: 2}
+  _startingTrack: {fileID: 11400000, guid: 206f1c992a17e6449852022988e7a2cd, type: 2}
   _line1: {fileID: 1531693935029472848}
   _line2: {fileID: 4368702143809747789}
   _transitionLine: {fileID: 810486117}

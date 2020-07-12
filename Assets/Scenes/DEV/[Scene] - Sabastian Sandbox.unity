@@ -204,6 +204,27 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2122527916}
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnKeyHeld:
+      m_PersistentCalls:
+        m_Calls: []
+    OnKeyUp:
+      m_PersistentCalls:
+        m_Calls: []
+  - KeyCode: 49
+    OnKeyDown:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2122527916}
           m_MethodName: PlayTrack
           m_Mode: 2
           m_Arguments:
@@ -221,16 +242,39 @@ MonoBehaviour:
     OnKeyUp:
       m_PersistentCalls:
         m_Calls: []
-  - KeyCode: 100
+  - KeyCode: 50
     OnKeyDown:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2122527916}
-          m_MethodName: Stop
-          m_Mode: 1
+          m_MethodName: PlayTrack
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 11400000, guid: 206f1c992a17e6449852022988e7a2cd,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Afloat.TrackData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnKeyHeld:
+      m_PersistentCalls:
+        m_Calls: []
+    OnKeyUp:
+      m_PersistentCalls:
+        m_Calls: []
+  - KeyCode: 51
+    OnKeyDown:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2122527916}
+          m_MethodName: PlayTrack
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: bcb8a8f82384b01409d1e51ea5d894fc,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Afloat.TrackData, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -981,12 +1025,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1531693935320669993, guid: 214bbdde286a3d848ada91bafe3833f6,
-        type: 3}
-      propertyPath: _startingTrack
-      value: 
-      objectReference: {fileID: 11400000, guid: 071d91ff72ea73e4c9e8ea1784ebe313,
-        type: 2}
     - target: {fileID: 1531693935320669998, guid: 214bbdde286a3d848ada91bafe3833f6,
         type: 3}
       propertyPath: m_Name
