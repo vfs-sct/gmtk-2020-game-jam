@@ -45,8 +45,9 @@ GameObject:
   - component: {fileID: 8610107150030360901}
   - component: {fileID: 8610107150030360902}
   - component: {fileID: 8610107150030360898}
+  - component: {fileID: 1609133305911392144}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: '[Prefab] - GameController'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,6 +218,33 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8610107150030360920}
         m_MethodName: RegisterGoblin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1609133305911392144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610107150030360921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9226f4dc4e51144b0860a343be4b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: ca02efbefda1f0247b183f3e9e19c579, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8610107150030360920}
+        m_MethodName: PlayerDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

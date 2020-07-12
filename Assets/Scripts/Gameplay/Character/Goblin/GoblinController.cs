@@ -18,6 +18,7 @@ namespace Afloat
         [SerializeField] private LayerMask _playerLayerMask = default;
         [SerializeField] private GameEvent _deathEvent = null;
         [SerializeField] private GameEvent _registerEvent = null;
+        [SerializeField] private float _timeToKillPlayer = 0.5f;
         [Header("Audio")] 
         [SerializeField] private AudioSourceController _dyingSFX;
         // ## PROPERTIES  ##
@@ -29,6 +30,7 @@ namespace Afloat
         private Rigidbody _rbd;
         private PlayerController _target;
         private bool _dead = false;
+        private float _killingTimer = 0f;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -67,6 +69,27 @@ namespace Afloat
                 }
             }
 
+        }
+
+        private void OnCollisionStay(Collision other)
+        {
+            if(other.gameObject.TryGetComponent<PlayerController>(out PlayerController player))
+            {
+                _killingTimer += Time.fixedDeltaTime;
+
+                if(_killingTimer > _timeToKillPlayer)
+                {
+                    player.Die();
+                }
+            }
+        }
+
+        private void OnCollisionExit(Collision other)
+        {
+            if(other.gameObject.TryGetComponent<PlayerController>(out PlayerController player))
+            {
+                _killingTimer = 0f;
+            }
         }
 
 #endregion

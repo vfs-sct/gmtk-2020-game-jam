@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.46
+    agentRadius: 0.27
     agentHeight: 1.52
     agentSlope: 45
     agentClimb: 0.5
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.15333334
+    cellSize: 0.09
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -771,37 +771,37 @@ PrefabInstance:
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.92152
+      value: 15.178838
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.79
+      value: 8.566111
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1608162
+      value: 2.3762147
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.047843173
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9988549
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
@@ -816,12 +816,17 @@ PrefabInstance:
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 5.485
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752334166695834704, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108827741610512706, guid: 7942c0ba30aead84f80986a6ab151b7e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7777230567450707523, guid: 7942c0ba30aead84f80986a6ab151b7e,
         type: 3}
