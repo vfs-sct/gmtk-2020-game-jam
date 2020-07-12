@@ -14,6 +14,7 @@ namespace Afloat
         [SerializeField] private string _yMoveInput = "";
         [SerializeField] private string _xAimInput = "";
         [SerializeField] private string _yAimInput = "";
+        [SerializeField] private Animator _playerAnimator = null;
 
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
@@ -47,6 +48,11 @@ namespace Afloat
             if(moveInput.sqrMagnitude > 0.01f)
             {
                 _targetPlayer.Move(_moveInput);
+                _playerAnimator.SetBool("Moving", true);
+            }
+            else
+            {
+                _playerAnimator.SetBool("Moving", false);
             }
 
             // Moves player's aim
@@ -59,6 +65,12 @@ namespace Afloat
 #endregion
 
 #region // ## PUBLIC METHODS ##
+
+        public void PlayShootAnimation()
+        {
+            _playerAnimator.SetTrigger("Throw");
+        }
+
 #endregion
         
 #region // ## <SOME INTERFACE> METHODS ##   

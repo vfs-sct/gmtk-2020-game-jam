@@ -274,6 +274,7 @@ MonoBehaviour:
   _yMoveInput: Vertical
   _xAimInput: AimHorizontal
   _yAimInput: AimVertical
+  _playerAnimator: {fileID: 8333991282807375343}
 --- !u!114 &6495254354889167016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +311,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6495254354889167016}
         m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6495254354889167019}
+        m_MethodName: PlayShootAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -551,6 +563,12 @@ PrefabInstance:
 --- !u!4 &7745022033209180245 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 810932344702980670, guid: c5ea2fabd98ad1c449d0cb5959120050,
+    type: 3}
+  m_PrefabInstance: {fileID: 6934094453936525931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8333991282807375343 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -7813021048977549436, guid: c5ea2fabd98ad1c449d0cb5959120050,
     type: 3}
   m_PrefabInstance: {fileID: 6934094453936525931}
   m_PrefabAsset: {fileID: 0}
