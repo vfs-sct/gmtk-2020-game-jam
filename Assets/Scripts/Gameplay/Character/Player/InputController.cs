@@ -15,6 +15,7 @@ namespace Afloat
         [SerializeField] private string _xAimInput = "";
         [SerializeField] private string _yAimInput = "";
         [SerializeField] private Animator _playerAnimator = null;
+        [SerializeField] private GameData _data = null;
 
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
@@ -28,6 +29,9 @@ namespace Afloat
 
         private void Update()
         {
+            if(_data.GameOver) return;
+
+
             Vector2 moveInput = new Vector2(Input.GetAxis(_xMoveInput), Input.GetAxis(_yMoveInput));
             Vector2 aimInput = new Vector2(Input.GetAxis(_xAimInput), Input.GetAxis(_yAimInput));
 

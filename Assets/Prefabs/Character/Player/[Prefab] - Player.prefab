@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 6495254354889167019}
   - component: {fileID: 6495254354889167016}
   - component: {fileID: 3007784052553569969}
+  - component: {fileID: 4620310402952108408}
   m_Layer: 10
   m_Name: Player Logic
   m_TagString: Untagged
@@ -338,6 +339,7 @@ MonoBehaviour:
   _xAimInput: AimHorizontal
   _yAimInput: AimVertical
   _playerAnimator: {fileID: 8333991282807375343}
+  _data: {fileID: 11400000, guid: 98b1a407df5dbd349afb19f005f48aec, type: 2}
 --- !u!114 &6495254354889167016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +387,33 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 6495254354889167019}
         m_MethodName: PlayShootAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4620310402952108408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495254354889166996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9226f4dc4e51144b0860a343be4b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: c8b04b308debce9409606f5cbce7e91c, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6495254354889167016}
+        m_MethodName: GameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
