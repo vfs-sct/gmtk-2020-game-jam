@@ -858,6 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _actionClip: {fileID: 8300000, guid: 349e7b3bbdadd3c42ad5f4047077bd48, type: 3}
+  _shootEvent: {fileID: 11400000, guid: 1b2146f90dc236a49bc07e2ce98d5818, type: 2}
   _target: {fileID: 1877403093}
   _track: {fileID: 11400000, guid: 1111288bf57d3c549b2ea80c8995d10f, type: 2}
 --- !u!4 &2122527917
