@@ -45,6 +45,7 @@ namespace Afloat
         
         // ## PRIVATE UTIL VARS ##
 
+        AudioSource _targetSource = null;
         CoroutineHandler _midiRoutine = null;
         CoroutineHandler _playRoutine = null;
         MetricTimeSpan[] _midiEventList = null;
@@ -56,11 +57,13 @@ namespace Afloat
         {
             _playRoutine = new CoroutineHandler(target);
             _midiRoutine = new CoroutineHandler(target);
+            _targetSource = source;
             _playRoutine.Start(PlayRoutine(source, action));
         }
 
         public void Stop ()
-        {
+        {   
+            _targetSource.Stop();
             _playRoutine.Stop();
             _midiRoutine.Stop();
         }
