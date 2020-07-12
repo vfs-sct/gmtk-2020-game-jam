@@ -54,7 +54,7 @@ namespace Afloat.UI
             _transitionAnimator.Play(TRANSITION_OUT_STATE_NAME, ANIM_LAYER);
             
             // wait for length of anim
-            yield return new WaitForSeconds(
+            yield return new WaitForSecondsRealtime(
                 _transitionAnimator.GetCurrentAnimatorStateInfo(0).length
             );
         }
@@ -67,7 +67,7 @@ namespace Afloat.UI
             _transitionAnimator.Play(TRANSITION_IN_STATE_NAME, ANIM_LAYER);
 
             // wait for length of anim
-            yield return new WaitForSeconds(
+            yield return new WaitForSecondsRealtime(
                 _transitionAnimator.GetCurrentAnimatorStateInfo(0).length +
                 _transitionAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime
             );

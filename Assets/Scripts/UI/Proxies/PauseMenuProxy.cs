@@ -54,21 +54,25 @@ namespace Afloat.UI.Proxies
 
         public void ReturnToGame ()
         {
+            Time.timeScale = 1;
             _pauseMenuController.Hide();
         }
 
         public void Retry ()
         {
+            Time.timeScale = 1;
             StartCoroutine(LoadGame());
         }
 
         public void ExitToMainMenu ()
         {
+            Time.timeScale = 1;
             StartCoroutine(LoadMainMenu());   
         }
 
         public void ExitToDesktop ()
         {
+            Time.timeScale = 1;
             Application.Quit();
         }
 
