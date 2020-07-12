@@ -8,6 +8,8 @@ public class Aiming : MonoBehaviour
     private float aimRange = 5f;
     [SerializeField]
     private LayerMask enemyLayer = default;
+    [SerializeField]
+    Afloat.PotionPouch _pouch = null;
 
     private LineRenderer lineRenderer;
 
@@ -22,6 +24,8 @@ public class Aiming : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        lineRenderer.colorGradient = _pouch.CurrentPotion.GradientColor;
+
         lineRenderer.SetPosition(0, transform.position);
 
         RaycastHit hit;

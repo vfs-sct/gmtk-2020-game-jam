@@ -142,3 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimRange: 5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _pouch: {fileID: 11400000, guid: 81766129f84b7ef4db2755b303a305f6, type: 2}

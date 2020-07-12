@@ -11,5 +11,6 @@ namespace Afloat
         public string Name;
         public GameObject PotionPrefab;
         public GameObject VFXPrefab;
+        public Gradient GradientColor;
     }
 }
