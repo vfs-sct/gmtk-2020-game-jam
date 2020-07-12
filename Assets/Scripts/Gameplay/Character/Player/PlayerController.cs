@@ -1,6 +1,7 @@
 ﻿/*
     Copyright (C) 2020 Team Triple Double, Diego Castagne
 */
+using Afloat.Events;
 using UnityEngine;
 
 namespace Afloat
@@ -12,6 +13,7 @@ namespace Afloat
         [SerializeField] private float _turnSpeedSeconds = 0f;
         [SerializeField] private PotionLauncherController _potionLauncher = null;
         [SerializeField] private Transform _respawnPosition = null;
+        [SerializeField] private GameEvent _deathEvent = null;
         [SerializeField] private float _killZ = 5f;
 
 
@@ -64,6 +66,13 @@ namespace Afloat
         {
             _rbd.velocity = Vector3.zero;
             transform.position = _respawnPosition.position;
+        }
+
+        public void Die()
+        {
+            _deathEvent.Raise();
+
+            // Maybe respawn?
         }
 
 #endregion
