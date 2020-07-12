@@ -11,6 +11,8 @@ namespace Afloat
         [SerializeField] private float _moveSpeed = 0f;
         [SerializeField] private float _turnSpeedSeconds = 0f;
         [SerializeField] private PotionLauncherController _potionLauncher = null;
+        [SerializeField] private Transform _respawnPosition = null;
+        [SerializeField] private float _killZ = 5f;
 
 
         // ## PROPERTIES  ##
@@ -24,6 +26,14 @@ namespace Afloat
         private void Start()
         {
             _rbd = GetComponent<Rigidbody>();
+        }
+
+        private void FixedUpdate()
+        {
+            if(transform.position.y < _killZ)
+            {
+                Respawn();
+            }
         }
 
 #endregion
@@ -48,6 +58,12 @@ namespace Afloat
         public void Shoot()
         {
             _potionLauncher.ShootNextPotion();
+        }
+
+        public void Respawn()
+        {
+            _rbd.velocity = Vector3.zero;
+            transform.position = _respawnPosition.position;
         }
 
 #endregion
