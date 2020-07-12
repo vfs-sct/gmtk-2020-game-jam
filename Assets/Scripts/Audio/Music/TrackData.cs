@@ -109,7 +109,7 @@ namespace Afloat
                     continue;
                 }
 
-                Debug.Log($"[] {currentBeatIndex} --> ({(currentBeatIndex + 1) % _midiEventList.Length}) [{_midiEventList.Length}]");
+                // Debug.Log($"[] {currentBeatIndex} --> ({(currentBeatIndex + 1) % _midiEventList.Length}) [{_midiEventList.Length}]");
 
                 // updates time target
 
