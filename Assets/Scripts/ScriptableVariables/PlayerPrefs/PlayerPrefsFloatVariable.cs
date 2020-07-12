@@ -18,6 +18,11 @@ namespace Afloat
         
         protected override float GetValue (string playerPrefName)
         {
+            if(PlayerPrefs.HasKey(playerPrefName) == false)
+            {
+                return GetInspectorValue();
+            }
+
             return PlayerPrefs.GetFloat(playerPrefName);
         }   
 
