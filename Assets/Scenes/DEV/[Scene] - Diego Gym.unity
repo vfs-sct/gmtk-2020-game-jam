@@ -11846,6 +11846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Camera Showcase'
       objectReference: {fileID: 0}
+    - target: {fileID: 8495229365408401450, guid: 3d07d4a1ab9cd07459aaa1cfd044e5cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8495229365408401460, guid: 3d07d4a1ab9cd07459aaa1cfd044e5cc,
         type: 3}
       propertyPath: m_Radius
