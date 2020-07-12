@@ -18,6 +18,7 @@ namespace Afloat
         [SerializeField] private LayerMask _playerLayerMask = default;
         [SerializeField] private GameEvent _deathEvent = null;
         [SerializeField] private GameEvent _registerEvent = null;
+        [SerializeField] private float _timeToKillPlayer = 0.5f;
         // ## PROPERTIES  ##
         public PotionType PotionToKill => _potionToKill;
         // ## PUBLIC VARS ##
@@ -26,6 +27,7 @@ namespace Afloat
         private Rigidbody _rbd;
         private PlayerController _target;
         private bool _dead = false;
+        private float _killingTimer = 0f;
 
 #region // ## MONOBEHAVIOUR METHODS ##
 
@@ -64,6 +66,14 @@ namespace Afloat
                 }
             }
 
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            if(other.gameObject.TryGetComponent<PlayerController>(out PlayerController player))
+            {
+                player.Die();
+            }
         }
 
 #endregion
