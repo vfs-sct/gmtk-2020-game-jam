@@ -76,6 +76,8 @@ namespace Afloat
 
         private void OnCollisionStay(Collision other)
         {
+            if(_dead) return;
+
             if(other.gameObject.TryGetComponent<PlayerController>(out PlayerController player))
             {
                 _killingTimer += Time.fixedDeltaTime;
@@ -110,11 +112,15 @@ namespace Afloat
             _dyingSFX.transform.parent = null;
             Destroy(_dyingSFX.gameObject, _dyingSFX.GetComponent<AudioSource>().clip.length);
 
+            StopAllCoroutines();
+
             StartCoroutine(DyingRoutine());
         }
 
         public void SlowDown()
         {
+            if(_dead) return;
+
             StartCoroutine(SlowedDownRoutine(_durationSlowedDown, _agent.speed));
 
             _agent.speed *= _factorToSlowDown;
