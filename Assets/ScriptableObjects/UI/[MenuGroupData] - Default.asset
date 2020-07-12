@@ -7,11 +7,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b010f1bba9aa9ba4da1f29f08f0c373e, type: 3}
-  m_Name: Track 1
+  m_Script: {fileID: 11500000, guid: 9c409bce8208c9b44afbc178e18e3bdf, type: 3}
+  m_Name: '[MenuGroupData] - Default'
   m_EditorClassIdentifier: 
-  _loopClip: {fileID: 8300000, guid: 630ce442388cee84b8006567b321ec69, type: 3}
-  _midiFileName: '[Midi] - Track 1'
-  _bpm: 120
+  ShowOnStart: 1
+  UnlockCursorOnShow: 1
+  FadeTime: 0.1
+  DelayBetweenMenus: 0.2

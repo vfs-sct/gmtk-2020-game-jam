@@ -144,8 +144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetTrigger: {fileID: 629849853249329911}
   _text: {fileID: 7681583611320824581}
-  _defaultColor: {fileID: 11400000, guid: ed3d36ddfc859514c86d03109c0c5e05, type: 2}
-  _highlightColor: {fileID: 11400000, guid: b2e7055cbe5bccd4bba9d2c4013367b9, type: 2}
+  _defaultColor: {fileID: 11400000, guid: 106689ed8c13d444482989d5229a33bb, type: 2}
+  _highlightColor: {fileID: 11400000, guid: ce3376e3dc087c646abe621bfab77c46, type: 2}
 --- !u!1001 &2342356715523097579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,8 +187,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 5777730640853865701, guid: d3f55392ddee5654b9b87246594b7c5f,
-        type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5340088957943951598, guid: 1366140848031a046bf648f262ff6db4,
         type: 3}
       propertyPath: m_fontSize
@@ -249,6 +248,12 @@ PrefabInstance:
       propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5340088957943951598, guid: 1366140848031a046bf648f262ff6db4,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
     - target: {fileID: 9158880585123879909, guid: 1366140848031a046bf648f262ff6db4,
         type: 3}
       propertyPath: m_LocalPosition.x
