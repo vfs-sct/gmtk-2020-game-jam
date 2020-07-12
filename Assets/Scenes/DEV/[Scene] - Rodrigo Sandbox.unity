@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 9043688056930761279, guid: 6a0d4313df57f5441925d2b083e0d3f5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a0d4313df57f5441925d2b083e0d3f5, type: 3}
@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 5190082329919518789, guid: 2d867dc39f2a14c46ba038c4887e22fe,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5190082329919518794, guid: 2d867dc39f2a14c46ba038c4887e22fe,
         type: 3}
@@ -735,7 +735,7 @@ PrefabInstance:
     - target: {fileID: 5032629248404539278, guid: 5821ba81a7c831f478a6035911978186,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5821ba81a7c831f478a6035911978186, type: 3}
@@ -2139,7 +2139,7 @@ PrefabInstance:
     - target: {fileID: 3127913824200223335, guid: 9102578746bd8334bb085139c20d17e7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9102578746bd8334bb085139c20d17e7, type: 3}
@@ -2219,7 +2219,7 @@ PrefabInstance:
     - target: {fileID: 4926094835297396941, guid: fb0a55e35bb528542ab4ec58aa144a58,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb0a55e35bb528542ab4ec58aa144a58, type: 3}
@@ -2241,15 +2241,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4333848703269352289, guid: 6dbebb9a7caf0d348a76738c78742ae5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4333848703711565143, guid: 6dbebb9a7caf0d348a76738c78742ae5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333848703711565143, guid: 6dbebb9a7caf0d348a76738c78742ae5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333848704448249777, guid: 6dbebb9a7caf0d348a76738c78742ae5,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4333848704448249777, guid: 6dbebb9a7caf0d348a76738c78742ae5,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6458462992253363856, guid: 6dbebb9a7caf0d348a76738c78742ae5,
         type: 3}
@@ -2311,6 +2326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Blue Potion'
       objectReference: {fileID: 0}
+    - target: {fileID: 6458462992253363861, guid: 6dbebb9a7caf0d348a76738c78742ae5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dbebb9a7caf0d348a76738c78742ae5, type: 3}
 --- !u!1001 &6900655461092007608
@@ -2324,13 +2344,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 234778434, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 911575412, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 911575412, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1136321426, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136321426, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7315532104657468083, guid: 7ad7fce7a49faf048ab70cffb0646589,
         type: 3}
@@ -2391,6 +2423,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[Prefab] - Red Potion'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315532104657468086, guid: 7ad7fce7a49faf048ab70cffb0646589,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
@@ -2496,6 +2533,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Prefab] - Green Potion'
       objectReference: {fileID: 0}
+    - target: {fileID: 1711079786128845377, guid: 12d16a4e9c5ba5b43808933e4868c817,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1711079786128845380, guid: 12d16a4e9c5ba5b43808933e4868c817,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2556,15 +2598,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8231177481972331365, guid: 12d16a4e9c5ba5b43808933e4868c817,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8231177482872084867, guid: 12d16a4e9c5ba5b43808933e4868c817,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231177482872084867, guid: 12d16a4e9c5ba5b43808933e4868c817,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231177483016421301, guid: 12d16a4e9c5ba5b43808933e4868c817,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8231177483016421301, guid: 12d16a4e9c5ba5b43808933e4868c817,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12d16a4e9c5ba5b43808933e4868c817, type: 3}
@@ -2583,7 +2640,7 @@ PrefabInstance:
     - target: {fileID: 8376637858369933665, guid: 66aa4b35435887544b39288348eddf3c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8376637858369933676, guid: 66aa4b35435887544b39288348eddf3c,
         type: 3}
@@ -2663,7 +2720,7 @@ PrefabInstance:
     - target: {fileID: 9208346875399887804, guid: 6248c70f0afcb6448b7874723f494f4b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9208346875399887807, guid: 6248c70f0afcb6448b7874723f494f4b,
         type: 3}
