@@ -81,6 +81,7 @@ namespace Afloat
         public void GameOver()
         {
             _gameOver = true;
+            Destroy(gameObject);
         }
 
 #endregion
