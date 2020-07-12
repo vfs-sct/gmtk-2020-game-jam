@@ -29,6 +29,7 @@ namespace Afloat
         [SerializeField] private AudioSource _line1 = null;
         [SerializeField] private AudioSource _line2 = null;
         [SerializeField] private AudioSource _transitionLine = null;
+        [SerializeField] private AudioSource _metronomeLine = null;
 
         [Header("Song Transition")]
         [SerializeField] private AudioClip _trackStart = null;
@@ -146,7 +147,7 @@ namespace Afloat
         {
             if(Time.timeScale < 0.5f) return;
 
-            if(_actionClip != null) AudioSource.PlayClipAtPoint(_actionClip, Camera.main.transform.position);
+            if(_actionClip != null) _metronomeLine.PlayOneShot(_actionClip);
             _shootEvent.Raise();
         }
         
