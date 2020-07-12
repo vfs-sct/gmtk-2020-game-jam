@@ -68,11 +68,24 @@ namespace Afloat
 
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionStay(Collision other)
         {
             if(other.gameObject.TryGetComponent<PlayerController>(out PlayerController player))
             {
-                player.Die();
+                _killingTimer += Time.fixedDeltaTime;
+
+                if(_killingTimer > _timeToKillPlayer)
+                {
+                    player.Die();
+                }
+            }
+        }
+
+        private void OnCollisionExit(Collision other)
+        {
+            if(other.gameObject.TryGetComponent<PlayerController>(out PlayerController player))
+            {
+                _killingTimer = 0f;
             }
         }
 

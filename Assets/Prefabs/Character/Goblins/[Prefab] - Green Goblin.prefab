@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587491607780666957}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6752334166695834704}
@@ -530,7 +530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4792409148370993205}
   m_LocalRotation: {x: 0.50022405, y: -0.49977583, z: -0.50022405, w: 0.49977583}
-  m_LocalPosition: {x: -0, y: 0.6351463, z: -0.03524292}
+  m_LocalPosition: {x: -0, y: 0.6351463, z: 0.16475707}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7489359764512310142}
@@ -705,10 +705,10 @@ GameObject:
   - component: {fileID: -3080937791457517594}
   - component: {fileID: -3615315977236328647}
   - component: {fileID: 1447180191206170485}
-  - component: {fileID: -2333059376619831281}
   - component: {fileID: 8250998699295761371}
   - component: {fileID: -9150499537138949451}
   - component: {fileID: 8170819506604980934}
+  - component: {fileID: 5661994254520522221}
   m_Layer: 11
   m_Name: '[Prefab] - Green Goblin'
   m_TagString: Untagged
@@ -761,10 +761,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.46044207
+  m_Radius: 0.27
   m_Height: 1.5252217
   m_Direction: 1
-  m_Center: {x: 0.039557934, y: 0.76261085, z: 0.14999998}
+  m_Center: {x: 0.039557934, y: 0.76261085, z: 0}
 --- !u!54 &-3615315977236328647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -795,35 +795,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _potionToKill: {fileID: 11400000, guid: 044919aa7302b954d8b341781abf8193, type: 2}
   _timeToDie: 0.5
-  _agent: {fileID: -2333059376619831281}
+  _agent: {fileID: 5661994254520522221}
   _sightRange: 50
   _playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
   _deathEvent: {fileID: 11400000, guid: 8bf16f591b1d492468cd161b6ec9d74b, type: 2}
   _registerEvent: {fileID: 11400000, guid: 21ecaf202bb7db24ea3b5d775c41de74, type: 2}
---- !u!195 &-2333059376619831281
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7777230567450707523}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  _timeToKillPlayer: 0.2
 --- !u!114 &8250998699295761371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -960,6 +939,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!195 &5661994254520522221
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777230567450707523}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.27
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.52
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &8384045706018879454
 GameObject:
   m_ObjectHideFlags: 0
