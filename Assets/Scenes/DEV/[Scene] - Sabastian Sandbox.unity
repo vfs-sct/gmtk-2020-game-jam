@@ -245,11 +245,10 @@ GameObject:
   m_Component:
   - component: {fileID: 170893270}
   - component: {fileID: 170893269}
-  - component: {fileID: 170893268}
   - component: {fileID: 170893267}
   m_Layer: 0
   m_Name: HUD Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,14 +357,6 @@ MonoBehaviour:
       data1: 0
       data2: 0
   defaultFrameSettings: 0
---- !u!81 &170893268
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170893266}
-  m_Enabled: 1
 --- !u!20 &170893269
 Camera:
   m_ObjectHideFlags: 0
@@ -674,7 +665,7 @@ PrefabInstance:
     - target: {fileID: 1711079786128845380, guid: 12d16a4e9c5ba5b43808933e4868c817,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 369.51
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1711079786128845380, guid: 12d16a4e9c5ba5b43808933e4868c817,
         type: 3}
@@ -806,7 +797,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1711079786128845382, guid: 12d16a4e9c5ba5b43808933e4868c817, type: 3}
+    - {fileID: 1711079786128845383, guid: 12d16a4e9c5ba5b43808933e4868c817, type: 3}
+    - {fileID: 4500324202575449216, guid: 12d16a4e9c5ba5b43808933e4868c817, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 12d16a4e9c5ba5b43808933e4868c817, type: 3}
 --- !u!4 &305818291 stripped
 Transform:
@@ -942,7 +936,7 @@ PrefabInstance:
     - target: {fileID: 7315532104657468083, guid: 7ad7fce7a49faf048ab70cffb0646589,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7315532104657468083, guid: 7ad7fce7a49faf048ab70cffb0646589,
         type: 3}
@@ -1034,7 +1028,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7315532104657468081, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
+    - {fileID: 7315532104657468080, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
+    - {fileID: 5498711852307651703, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ad7fce7a49faf048ab70cffb0646589, type: 3}
 --- !u!4 &506085126 stripped
 Transform:
@@ -1153,7 +1150,7 @@ PrefabInstance:
     - target: {fileID: 6458462992253363856, guid: 6dbebb9a7caf0d348a76738c78742ae5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6458462992253363856, guid: 6dbebb9a7caf0d348a76738c78742ae5,
         type: 3}
@@ -1235,7 +1232,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6458462992253363858, guid: 6dbebb9a7caf0d348a76738c78742ae5, type: 3}
+    - {fileID: 6458462992253363859, guid: 6dbebb9a7caf0d348a76738c78742ae5, type: 3}
+    - {fileID: 8100767524440850516, guid: 6dbebb9a7caf0d348a76738c78742ae5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6dbebb9a7caf0d348a76738c78742ae5, type: 3}
 --- !u!4 &682567582 stripped
 Transform:
@@ -2646,11 +2646,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 466018776066088044, guid: 8358e6bfd7f52cb4997d3d60748e372e,
-        type: 3}
-      propertyPath: m_ReferencePixelsPerUnit
-      value: 95.15
-      objectReference: {fileID: 0}
     - target: {fileID: 466018776066088046, guid: 8358e6bfd7f52cb4997d3d60748e372e,
         type: 3}
       propertyPath: m_Name
@@ -2774,7 +2769,7 @@ PrefabInstance:
     - target: {fileID: 466018776066088051, guid: 8358e6bfd7f52cb4997d3d60748e372e,
         type: 3}
       propertyPath: m_PlaneDistance
-      value: 100
+      value: 265.8
       objectReference: {fileID: 0}
     - target: {fileID: 466018776066088051, guid: 8358e6bfd7f52cb4997d3d60748e372e,
         type: 3}
