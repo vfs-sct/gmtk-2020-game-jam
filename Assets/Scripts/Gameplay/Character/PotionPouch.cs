@@ -11,5 +11,8 @@ namespace Afloat
     {
         public int PotionInHandIndex;
         public List<PotionType> Content;
+        
+        
+        public PotionType CurrentPotion => Content[PotionInHandIndex];
     }
 }
