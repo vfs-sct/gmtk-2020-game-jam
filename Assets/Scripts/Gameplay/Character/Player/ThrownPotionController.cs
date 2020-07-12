@@ -11,6 +11,8 @@ namespace Afloat
         [SerializeField] private PotionType _potionType = null;
         [SerializeField] private float _splashRange = 0.5f;
         [SerializeField] private LayerMask _goblinsLayerMask = default;
+        [Header("Audio")]
+        [SerializeField] private AudioSourceController _explosionSFX;
         // ## PROPERTIES  ##
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
@@ -34,7 +36,9 @@ namespace Afloat
                 }
             }
 
-            // Play potion breaking sound here
+            _explosionSFX.PlayImmediately();
+            _explosionSFX.transform.parent = null;
+            Destroy(_explosionSFX.gameObject, _explosionSFX.GetComponent<AudioSource>().clip.length);
 
             var vfx = Instantiate(_potionType.VFXPrefab, transform.position, Quaternion.identity);
             
