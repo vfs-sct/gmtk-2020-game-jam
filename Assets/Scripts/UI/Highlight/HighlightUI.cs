@@ -24,10 +24,16 @@ namespace Afloat
         [SerializeField] private EventTrigger _targetTrigger;
 		[SerializeField] private AudioSourceController _sound;
 
+
+        public bool IsSelected => _targetTrigger.gameObject == EventSystem.current.currentSelectedGameObject;
+
         // ## PUBLIC MEMBERS ##
         
         [System.NonSerialized] public RectTransform Transform;
         [System.NonSerialized] public CanvasGroup CanvasGroup;
+        private bool _wasSelected = false;
+        private float fadeTime = 0.25f;
+
         
         
               
@@ -40,8 +46,6 @@ namespace Afloat
             
             Hide(0);
 
-
-            float fadeTime = 0.25f;
             
 
             // Hover Start
@@ -64,6 +68,22 @@ namespace Afloat
             _targetTrigger.triggers.Add(hoverStopEvent);
         }
         
+        private void Update()
+        {
+            
+            if(_wasSelected == false && IsSelected == true)
+            {
+                Show(fadeTime);
+            }
+
+            else if(_wasSelected == true && IsSelected == false)
+            {
+                Hide(fadeTime);
+            }
+
+            _wasSelected = IsSelected;
+        }
+
 #endregion     
               
 #region // ## PUBLIC METHODS ##
