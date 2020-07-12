@@ -28,10 +28,11 @@ namespace Afloat
             {
                 if(col.gameObject.TryGetComponent<GoblinController>(out GoblinController goblin))
                 {
+                    if(goblin.Dead) continue;
+
                     if(_potionType == goblin.PotionToKill)
                     {
                         goblin.Die();
-                        // Raise a kill goblin event for score purposes
                     }
                 }
             }

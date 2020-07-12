@@ -22,6 +22,7 @@ namespace Afloat
         [SerializeField] private AudioSourceController _dyingSFX;
         // ## PROPERTIES  ##
         public PotionType PotionToKill => _potionToKill;
+        public bool Dead => _dead;
         // ## PUBLIC VARS ##
         // ## PROTECTED VARS ##
         // ## PRIVATE UTIL VARS ##
