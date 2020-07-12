@@ -654,7 +654,7 @@ MonoBehaviour:
   source: {fileID: 1006151342213925503}
   mixerGroup: {fileID: -3131367771171368755, guid: ad15f783bf8c09a459e9a2b66337c5d0,
     type: 2}
-  volume: 0
+  volume: -5
   randomVolMin: 0
   randomVolMax: 0
   pitch: 0
